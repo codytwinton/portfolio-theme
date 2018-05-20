@@ -1,7 +1,7 @@
 {
-  "name": "sarahwintondesign.com",
-  "version": "1.0.0",
-  "description": "Marketing Website for Sarah Winton Design",
+  "name": "portfolio-theme",
+  "version": "0.5.0",
+  "description": "Jekyll Theme for Personal Portfolio Website",
   "scripts": {
     "copyBootstrap": "cpx \"node_modules/bootstrap/dist/js/bootstrap.min.js\" assets/js/bootstrap && cpx \"node_modules/bootstrap/dist/js/bootstrap.min.js.map\" assets/js/bootstrap && cpx \"node_modules/bootstrap/scss/**/*.scss\" _sass/bootstrap",
     "copyJQuery": "cpx \"node_modules/jquery/dist/jquery.min.js\" assets/js/jquery",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sarahwintondesign/sarahwintondesign.com.git"
+    "url": "git+https://github.com/codytwinton/portfolio-theme.git"
   },
   "keywords": [
     "jekyll"
@@ -19,9 +19,9 @@
   "author": "Cody Winton <cody.t.winton@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sarahwintondesign/sarahwintondesign.com/issues"
+    "url": "https://github.com/codytwinton/portfolio-theme/issues"
   },
-  "homepage": "https://sarahwintondesign.com",
+  "homepage": "https://codytwinton.github.io/portfolio-theme/",
   "devDependencies": {
     "cpx": "^1.5.0"
   },

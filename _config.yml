@@ -1,8 +1,8 @@
 ---
 # Jekyll Settings
-title: Sarah Winton Design
+title: Portfolio Website
 timezone: America/Chicago
-url: http://sarahwintondesign.com
+url: https://codytwinton.github.io/portfolio-theme/
 baseurl: 
 # Enable once Forestry supports custom collections_dir
 # collections_dir: collections
@@ -21,21 +21,21 @@ sass:
 strict_front_matter: true
 
 # SEO
-description: Graphic Designer
+description: Portfolio Website
 author:
-  name: Sarah Winton Design
-  twitter: sarahwinton
+  name: Portfolio Website
+  twitter: codytwinton
 # image: "/uploads/logo.png"
 # logo: "/uploads/logo.png"
 social:
-  name: Sarah Winton Design
+  name: Portfolio Website
   links:
-  - https://twitter.com/sarahwinton
-  - https://www.facebook.com/sarahwintondesign
-  - https://www.linkedin.com/in/sarah-winton
-  - https://github.com/sarahwintondesign.com
+  - https://twitter.com/codytwinton
+  - https://www.facebook.com/codytwinton
+  - https://www.linkedin.com/in/codytwinton
+  - https://github.com/codytwinton
 twitter:
-  username: sarahwinton
+  username: codytwinton
 
 # Collections
 collections:
