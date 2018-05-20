@@ -1,0 +1,21 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- type: field_group_list
+  label: Repos
+  name: repos
+  description: The repos to display
+  fields:
+  - type: text
+    label: Repo
+    name: repo
+    description: e.g. SwiftCommonMark
+    config:
+      required: true
+  - type: text
+    name: owner
+    label: Repo Owner
+    description: e.g. codytwinton
+    config:
+      required: true
