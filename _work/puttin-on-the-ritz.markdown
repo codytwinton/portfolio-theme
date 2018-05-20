@@ -9,8 +9,8 @@ body: ''
 categories:
 - Design
 images:
-- "/uploads/2018/05/20/puttin-on-the-ritz.jpg"
-testimonial: 'Example First Testimonial'
+- "/uploads/2018/05/20/example-logo.png"
+testimonial: Example First Testimonial
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
