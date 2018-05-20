@@ -1,4 +1,4 @@
-# portfolio-theme
+# Portfolio Theme
 
 Jekyll Theme for Personal Portfolio Website
 
