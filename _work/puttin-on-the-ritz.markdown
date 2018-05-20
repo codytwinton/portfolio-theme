@@ -10,6 +10,8 @@ categories:
 - Design
 images:
 - "/uploads/2018/05/20/example-logo.png"
+- "/uploads/2018/05/20/example-logo.png"
+- "/uploads/2018/05/20/example-logo.png"
 testimonial: Example First Testimonial
 ---
 

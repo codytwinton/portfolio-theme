@@ -5,10 +5,12 @@ subtitle: Second Subtitle
 profiles:
 - url: https://www.example.com
   title: Website
-images:
-- "/uploads/2018/05/15/olivia-joy-photography.png"
 categories:
 - Development
+images:
+- "/uploads/2018/05/20/example-logo.png"
+- "/uploads/2018/05/20/example-logo.png"
+- "/uploads/2018/05/20/example-logo.png"
 testimonial: 'Example Second Testimonial'
 ---
 
