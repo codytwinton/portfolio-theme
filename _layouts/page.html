@@ -18,6 +18,8 @@ layout: default
       {% include sections/collection.html section=section %}
     {% when "partial-columns" %}
       {% include sections/columns.html section=section %}
+    {% when "partial-github" %}
+      {% include sections/github.html section=section %}
     {% endcase %}
 
   {% endfor %}
