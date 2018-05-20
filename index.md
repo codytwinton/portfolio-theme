@@ -12,6 +12,8 @@ sections:
   repos:
   - repo: SwiftCommonMark
     owner: codytwinton
+  id: projects
+  title: GitHub Projects
 - template: partial-columns
   columns:
   - title: About
