@@ -59,6 +59,6 @@ fields:
   config:
     labelField: title
 pages:
-- _work/tropically-bohemian.markdown
 - _work/puttin-on-the-ritz.markdown
 - _work/olivia-joy-photography.markdown
+- _work/tropically-bohemian.markdown
