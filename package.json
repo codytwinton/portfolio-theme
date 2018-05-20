@@ -1,0 +1,33 @@
+{
+  "name": "sarahwintondesign.com",
+  "version": "1.0.0",
+  "description": "Marketing Website for Sarah Winton Design",
+  "scripts": {
+    "copyBootstrap": "cpx \"node_modules/bootstrap/dist/js/bootstrap.min.js\" assets/js/bootstrap && cpx \"node_modules/bootstrap/dist/js/bootstrap.min.js.map\" assets/js/bootstrap && cpx \"node_modules/bootstrap/scss/**/*.scss\" _sass/bootstrap",
+    "copyJQuery": "cpx \"node_modules/jquery/dist/jquery.min.js\" assets/js/jquery",
+    "copyPopper": "cpx \"node_modules/popper.js/dist/umd/popper.min.js\" assets/js/popper && cpx \"node_modules/popper.js/dist/umd/popper.min.js.map\" assets/js/popper",
+    "copyAll": "npm run copyBootstrap && npm run copyJQuery && npm run copyPopper",
+    "test": "bundle exec jekyll build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahwintondesign/sarahwintondesign.com.git"
+  },
+  "keywords": [
+    "jekyll"
+  ],
+  "author": "Cody Winton <cody.t.winton@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sarahwintondesign/sarahwintondesign.com/issues"
+  },
+  "homepage": "https://sarahwintondesign.com",
+  "devDependencies": {
+    "cpx": "^1.5.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  }
+}

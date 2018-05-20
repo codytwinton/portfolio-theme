@@ -1,0 +1,63 @@
+---
+---
+
+@charset 'utf-8';
+{% assign theme = site.data.theme %}
+
+
+// Font Families
+
+{% assign font_families = "" | split: "" %}
+
+{% for font in theme.google_fonts %}
+{% assign family = font.name | append: ":" | append: font.weights %}
+{% assign font_families = font_families | push: family %}
+{% endfor %}
+
+@import url('https://fonts.googleapis.com/css?family={{ font_families | join: "|" }}');
+
+$font-family-base: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+
+// Font Weights
+
+$font-weight-light: 300;
+
+$display1-weight: $font-weight-light;
+$display2-weight: $font-weight-light;
+$display3-weight: $font-weight-light;
+$display4-weight: $font-weight-light;
+
+
+// Font Sizes
+
+$h1-font-size: 1.4rem;
+$h2-font-size: 1.3rem;
+$h3-font-size: 1.2rem;
+$h4-font-size: 1.1rem;
+$h5-font-size: 1.0rem;
+$h6-font-size: 0.9rem;
+
+
+// Line Heights
+
+$headings-line-height: 2;
+$line-height-base: 1.9;
+
+
+// Colors
+
+$body-color: {{ theme.colors.font }};
+$primary: {{ theme.colors.brand }};
+
+$link-hover-decoration: none;
+
+
+// Grid
+
+$grid-gutter-width: 32px;
+
+
+// Theme
+
+@import 'theme';

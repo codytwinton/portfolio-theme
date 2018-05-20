@@ -1,0 +1,25 @@
+---
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  label: Section ID
+  name: id
+  description: 'The unique section used to reference in #links'
+  config:
+    required: true
+- type: text
+  name: title
+  label: Title
+  description: Optional title displayed above the collections
+- type: select
+  name: collection
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - work
+  label: Collection
+  description: The collection to display
+  default: work

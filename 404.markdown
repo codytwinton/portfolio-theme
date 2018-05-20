@@ -1,0 +1,8 @@
+---
+title: 404 Not Found
+display_title: 404
+permalink: 404.html
+subtitle: Well, this is awkward
+---
+
+The requested page could not be found. :(

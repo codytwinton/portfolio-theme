@@ -1,0 +1,22 @@
+<h2 style="margin-top: 96px;">
+  {{ include.section.title }}
+</h2>
+
+<div id={{ include.section.id }} class="row" style="margin-bottom: 96px;">
+  {% assign collection = site[include.section.collection] | sort: "date" | reverse %}
+
+  {% for item in collection limit: 12 %}
+
+  {% if item.images.first %}
+    <div class="col-12 col-sm-6 col-md-4" style="text-align: center;">
+      <a href={{ item.url }} class="overlay-container">
+        <img class="img" src={{ item.images.first }} alt="{{ item.title }}" style="max-width: 100%; display: block;">
+        <div class="overlay">
+          <p class="overlay-text">{{item.title}}</p>
+        </div>
+      </a>
+    </div>
+  {% endif %}
+
+  {% endfor %}
+</div>

@@ -1,0 +1,19 @@
+<footer style="margin-bottom: 96px;">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <p>Copyright {{ "©" }} {{ site.time | date: "%Y" }} {{ site.data.info.company_name }}</p>
+    </div>
+
+    <div class="col-12 col-md-6" style="text-align: right;">
+      <ul class="list-inline">
+        {% for social in site.data.socials %}
+        <li class="list-inline-item">
+          <a href={{ social.url | escape }} title="{{ social.title }}" target="_blank" style="font-size:1rem; margin: 0 16px;">
+            <i class="{{ site.data.icons[social.title].fa_icon }}"></i>
+          </a>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</footer>

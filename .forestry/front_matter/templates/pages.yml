@@ -1,0 +1,32 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+  description: e.g. About
+  config:
+    required: true
+- type: text
+  name: display_title
+  label: Display Title
+  description: e.g. About Me
+- name: subtitle
+  label: Subtitle
+  type: text
+  hidden: false
+  default: 
+  description: e.g. My story begins...
+- type: blocks
+  name: sections
+  label: Sections
+  template_types:
+  - partial-collection
+  - partial-columns
+  description: The sections to include in the page
+pages:
+- index.markdown
+- 404.markdown

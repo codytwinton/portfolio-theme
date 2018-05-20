@@ -1,0 +1,64 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- name: title
+  label: Work Title
+  type: text
+  hidden: false
+  default: ''
+  description: e.g. Meals OnCol
+  config:
+    required: true
+- name: subtitle
+  label: Subtitle
+  type: text
+  hidden: false
+  default: 
+  description: e.g. Meals for patients
+- name: date
+  label: Work Date
+  type: datetime
+  hidden: false
+  default: ''
+  description: When did this project complete?
+  config:
+    time_format: " "
+- type: tag_list
+  label: Categories
+  name: categories
+  description: Food, Home Decor, etc.
+- type: image_gallery
+  name: images
+  label: Gallery
+  description: Portfolio of the work done
+- type: textarea
+  name: testimonial
+  label: Testimonial
+  description: Quote from the client
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: field_group_list
+  name: profiles
+  label: Client Profiles
+  fields:
+  - type: text
+    name: title
+    label: Title
+    config:
+      required: true
+    default: Website
+  - type: text
+    name: url
+    label: URL
+    config:
+      required: true
+  description: Website, Facebook, etc.
+  config:
+    labelField: title
+pages:
+- _work/tropically-bohemian.markdown
+- _work/puttin-on-the-ritz.markdown
+- _work/olivia-joy-photography.markdown

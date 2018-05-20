@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang={{ site.lang | default: "en" }}>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>{{ site.title | escape }} | {{ page.title | escape }}</title>
+
+  <link rel="canonical" href={{ page.url | replace:'index.html','' | absolute_url }}>
+  <link rel="alternate" type="application/rss+xml" title={{ site.title | escape }} href={{ "/feed.xml" | relative_url }}>
+
+  <link rel="icon" type="image/png" href={{ "assets/images/favicon.png" | relative_url }}>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href={{ "/assets/css/main.css" | relative_url }}>
+
+  {%- if jekyll.environment == 'production' and site.data.info.ga_tracking_id -%}
+
+  {%- capture analytics_js -%}
+  {%- include google-analytics.js tracking_id=site.data.info.ga_tracking_id -%}
+  {%- endcapture %}
+
+  <script>{{ analytics_js }}</script>
+
+  {% endif %}
+
+  {% seo title=false %}
+
+</head>
+
+<body>
+  {{ content }}
+
+  <script src={{ "/assets/js/jquery/jquery.min.js" | relative_url }}></script>
+  <script src={{ "/assets/js/popper/popper.min.js" | relative_url }}></script>
+  <script src={{ "/assets/js/bootstrap/bootstrap.min.js" | relative_url }}></script>
+</body>
+
+</html>
