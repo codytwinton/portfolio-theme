@@ -1,34 +1,21 @@
-<div id={{ include.section.id }} class="row" style="margin-top: 96px; margin-bottom: 96px;">
-  {% assign pop_count = include.section.columns | minus: 4 %}
+<h2 style="margin-top: 96px;">
+  {{ include.section.title }}
+</h2>
 
-  {% if pop_count > 0 %}
-    {% assign columns = include.section.columns | pop: pop_count %}
-  {% else %}
-    {% assign columns = include.section.columns %}
-  {% endif %}
+<div id={{ include.section.id }} class="row" style="margin-bottom: 96px;">
+  {% for item in include.section.repos limit: 12 %}
 
+  <p>{{ item.repo }}</p>
 
-  {% for item in columns %}
-
-  {% assign width_num = item.width | plus: 0 %}
-  {% if width_num > 0 %}
-    {% assign col_class = "col-12 col-md-" | append: item.width %}
-    {% assign width_so_far = width_so_far | plus: width_num %}
-  {% else %}
-    {% assign col_class = "col-12 col-md" %}
-  {% endif %}
-
-  <div class="{{ col_class }}">
-    <h2>{{item.title}}</h2>
-    {{ item.body | markdownify }}
-  </div>
   {% endfor %}
 </div>
 
 <script>
   // self executing function here
   (function () {
-    console.log("Func called");
+    var repos = {{ include.section.repos | jsonify }};
+
+    console.log(repos);
 
   })();
 
