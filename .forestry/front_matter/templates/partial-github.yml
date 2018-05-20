@@ -2,6 +2,16 @@
 hide_body: false
 is_partial: true
 fields:
+- type: text
+  name: id
+  label: Section ID
+  description: 'The unique section used to reference in #links'
+  config:
+    required: true
+- type: text
+  label: Title
+  name: title
+  description: Optional title displayed above the collections
 - type: field_group_list
   label: Repos
   name: repos
