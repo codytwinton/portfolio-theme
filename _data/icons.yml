@@ -29,6 +29,8 @@ Plug:
   fa_icon: fas fa-plug
 Refresh:
   fa_icon: fas fa-sync-alt
+Stack Overflow:
+  fa_icon: fab fa-stack-overflow
 Tags:
   fa_icon: fas fa-tags
 Terminal:
