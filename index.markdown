@@ -1,8 +1,8 @@
 ---
 title: Home
 position: 0
-subtitle: Telling Stories and Creating Beauty
-display_title: Sarah Winton Design
+subtitle: Example Subtitle
+display_title: Example Display Title
 sections:
 - template: partial-collection
   collection: work
@@ -11,14 +11,13 @@ sections:
 - template: partial-columns
   columns:
   - title: About
-    body: Hey you guys! Sarah Winton here - freelance graphic designer & creative. Logo and brand style for personal and business needs. Contact me for interest and pricing.
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit scelerisque in dictum non consectetur. Id eu nisl nunc mi ipsum faucibus vitae. In hac habitasse platea dictumst. Id donec ultrices tincidunt arcu non sodales.
     width: ''
   - title: Contact
-    body: '[sarah@sarahwintondesign.com](mailto:sarah@sarahwintondesign.com "Email
-      Me")'
+    body: '[cody@codywinton.com](mailto:cody@codywinton.com "Contact Me")'
     width: '4'
   column_count: '2'
   id: about
 ---
 
-I'm Sarah, a Graphic Designer in California. I'm a creative, telling stories and sharing beauty.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
