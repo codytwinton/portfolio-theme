@@ -28,5 +28,5 @@ fields:
   - partial-columns
   description: The sections to include in the page
 pages:
-- index.markdown
-- 404.markdown
+- index.md
+- 404.md
