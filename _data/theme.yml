@@ -1,7 +1,9 @@
 ---
 colors:
-  brand: "#000000"
-  font: "#000000"
+  brand: "#007496"
+  font: "#454545"
 google_fonts:
-- name: Lato
-  weights: 300,300i,400,400i,700,700i
+- name: Source Code Pro
+  weights: 400,600,700
+- name: Source Sans Pro
+  weights: 600,700
