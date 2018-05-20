@@ -33,3 +33,17 @@ nav, .navbar {
   text-align: center;
   font-size: 1.3rem;
 }
+
+.footer-social-col {
+  text-align: right;
+}
+
+@include media-breakpoint-down(sm) {
+  div.footer-row {
+    text-align: center;
+
+    .footer-social-col {
+      text-align: center;
+    }
+  }
+}
