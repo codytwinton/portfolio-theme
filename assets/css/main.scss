@@ -10,14 +10,29 @@
 {% assign font_families = "" | split: "" %}
 
 {% for font in theme.google_fonts %}
-{% assign family = font.name | append: ":" | append: font.weights %}
+{% assign family = font.name | split: " " | join: "+" | append: ":" | append: font.weights %}
 {% assign font_families = font_families | push: family %}
+
+{% case font.type %}
+{% when "monospace" %}
+  {% assign monospace = font.name %}
+{% when "sans-serif" %}
+  {% assign sans_serif = font.name %}
+{% endcase %}
+
 {% endfor %}
 
 @import url('https://fonts.googleapis.com/css?family={{ font_families | join: "|" }}');
 
-$font-family-base: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+{% if monospace %}
+$font-family-monospace: {{monospace}}, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+{% endif %}
 
+{% if sans_serif %}
+$font-family-sans-serif: {{sans_serif}}, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, monospace;
+{% endif %}
+
+$font-family-base: $font-family-sans-serif;
 
 // Font Weights
 
