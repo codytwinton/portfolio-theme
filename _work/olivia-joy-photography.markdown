@@ -1,17 +1,15 @@
 ---
-title: Olivia Joy Photography
+title: Second Work
 date: 2017-10-20 05:00:00 +0000
-subtitle: Wedding, family, and portrait photography
+subtitle: Second Subtitle
 profiles:
-- title: Website
-  url: https://www.oliviajoyphotography.com
-- title: Facebook
-  url: https://www.facebook.com/oliviajoyphotographybirminghamal/
+- url: https://www.example.com
+  title: Website
 images:
 - "/uploads/2018/05/15/olivia-joy-photography.png"
 categories:
-- Logo Design
-testimonial: ''
+- Development
+testimonial: 'Example Second Testimonial'
 ---
 
-Olivia J. Morgan is a Birmingham Wedding, Family & Portrait film-inspired photographer providing clients a custom, full-service experience.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

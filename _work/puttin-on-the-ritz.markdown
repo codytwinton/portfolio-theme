@@ -1,14 +1,16 @@
 ---
-title: Puttin' on the Ritz
+title: First Work
 date: 2017-12-16 15:31:00 +0000
+subtitle: First Subtitle
 profiles:
-- url: https://www.facebook.com/puttinontheritzcorinth/
-  title: Facebook
-subtitle: A pet lover's shop
+- url: https://www.example.com
+  title: Website
 body: ''
-categories: []
+categories:
+- Design
 images:
 - "/uploads/2018/05/20/puttin-on-the-ritz.jpg"
-testimonial: ''
+testimonial: 'Example First Testimonial'
 ---
-Local, independently owned pet supply shop located in Downtown Corinth, Mississippi. Pets always welcome!
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

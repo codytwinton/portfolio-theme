@@ -1,13 +1,15 @@
 ---
-title: Tropically Bohemian
+title: Third Work
 date: 2017-08-16 15:57:00 +0000
-subtitle: Get Hyped
-categories: []
+subtitle: Third Subtitle
+profiles:
+- url: https://www.example.com
+  title: Website
+categories:
+- Management
 images:
 - "/uploads/2018/05/20/tropically-bohemian.jpg"
-testimonial: ''
-profiles:
-- title: Website
-  url: https://tropicallybohemian.com
+testimonial: 'Example Third Testimonial'
 ---
-Where tropical and mountain vibes meet faith and worldwide adventure.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
