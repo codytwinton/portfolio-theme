@@ -22,6 +22,3 @@ fields:
   - partial-collection
   - partial-columns
   description: The sections to include in the page
-pages:
-- index.md
-- 404.md

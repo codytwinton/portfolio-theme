@@ -58,7 +58,3 @@ fields:
   description: Website, Facebook, etc.
   config:
     labelField: title
-pages:
-- _work/first-work.md
-- _work/second-work.md
-- _work/third-work.md

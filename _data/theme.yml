@@ -3,9 +3,9 @@ colors:
   brand: "#007496"
   font: "#454545"
 google_fonts:
-- name: Source Code Pro
-  weights: "400,600,700"
-  type: monospace
 - name: Source Sans Pro
-  weights: "600,700"
+  weights: '600,700'
   type: sans-serif
+- name: Source Code Pro
+  weights: '400,600,700'
+  type: monospace
