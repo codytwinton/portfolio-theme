@@ -5,7 +5,15 @@
 <div id={{ include.section.id }} class="row" style="margin-bottom: 96px;">
   {% for item in include.section.repos limit: 12 %}
 
-  <p>{{ item.repo }}</p>
+  <div class="col-12 col-sm-6 col-md-4">
+    <div style="margin-top: 32px; margin-bottom: 32px;">
+      <h3>{{ item.title | default: item.repo }}</h3>
+      <p id="{{ item.repo }}-description"></p>
+      <a id="{{ item.repo }}-link" href="#">
+        <h6 id="{{ item.repo }}-language"></h6>
+      </a>
+    </div>
+  </div>
 
   {% endfor %}
 </div>
@@ -13,10 +21,38 @@
 <script>
   // self executing function here
   (function () {
-    var repos = {{ include.section.repos | jsonify }};
+    let repos = JSON.parse('{{ include.section.repos | jsonify }}');
 
-    console.log(repos);
+    for (let i = 0; i < repos.length; i++) {
+      let item = repos[i];
+      let repoAPIURL = 'https://api.github.com/repos/' + item.owner + '/' + item.repo;
 
+      let xhttp = new XMLHttpRequest();
+      xhttp.open('GET', repoAPIURL, true);
+      xhttp.setRequestHeader('Content-type', 'application/json');
+      xhttp.onreadystatechange = function (event) {
+
+        if (this.readyState < 4) {
+          return;
+        }
+        if (!this.responseText) {
+          console.error('No response text');
+          return;
+        }
+
+        let response = JSON.parse(this.responseText);
+
+        document.getElementById(item.repo + '-link').href = response.html_url;
+        document.getElementById(item.repo + '-description').innerHTML = response.description;
+        document.getElementById(item.repo + '-language').innerHTML = 'Built in ' + response.language + ' on GitHub';
+      };
+
+      xhttp.onerror = function (error) {
+        console.error(error);
+      }
+
+      xhttp.send();
+    }
   })();
 
 </script>

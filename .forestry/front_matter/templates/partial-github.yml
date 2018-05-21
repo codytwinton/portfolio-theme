@@ -17,6 +17,11 @@ fields:
   name: repos
   description: The repos to display
   fields:
+  - name: title
+    label: Title
+    type: text
+    hidden: false
+    description: The optional title to display
   - type: text
     label: Repo
     name: repo
