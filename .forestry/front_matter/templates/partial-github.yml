@@ -17,20 +17,22 @@ fields:
   name: repos
   description: The repos to display
   fields:
-  - name: title
-    label: Title
-    type: text
-    hidden: false
-    description: The optional title to display
-  - type: text
-    label: Repo
-    name: repo
-    description: The name of the repo
-    config:
-      required: true
   - type: text
     name: owner
     label: Repo Owner
     description: The owner's GitHub username
     config:
       required: true
+  - type: text
+    label: Repo
+    name: repo
+    description: The name of the repo
+    config:
+      required: true
+  - name: title
+    label: Title
+    type: text
+    hidden: false
+    description: The optional title to display
+  config:
+    labelField: repo
