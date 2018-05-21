@@ -39,6 +39,7 @@ sections:
     - Jekyll
     - Theme
     - Ruby
+    description: Jekyll theme built for a portfolio website
   - owner: sarahwintondesign
     repo: sarahwintondesign.com
     title: Sarah Winton Design
@@ -46,6 +47,7 @@ sections:
     - Jekyll
     - Ruby
     - Website
+    description: Design website built using Jekyll and Forestry
   id: projects
   title: GitHub Projects
 - template: partial-columns
