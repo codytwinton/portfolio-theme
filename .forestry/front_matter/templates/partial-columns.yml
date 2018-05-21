@@ -5,9 +5,9 @@ fields:
 - type: text
   label: Section ID
   name: id
+  description: 'The unique section used to reference in #links'
   config:
     required: true
-  description: 'The unique section used to reference in #links'
 - type: field_group_list
   label: Columns
   name: columns

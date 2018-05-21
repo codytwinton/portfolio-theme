@@ -5,13 +5,13 @@ fields:
 - type: text
   label: Section ID
   name: id
-  description: 'The unique section used to reference in #links'
+  description: 'The unique section used to reference in #id-links'
   config:
     required: true
 - type: text
   name: title
   label: Title
-  description: Optional title displayed above the collections
+  description: The optional title displayed above the collections
 - type: select
   name: collection
   config:

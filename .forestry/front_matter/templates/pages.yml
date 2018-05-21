@@ -14,12 +14,6 @@ fields:
   name: display_title
   label: Display Title
   description: e.g. About Me
-- name: subtitle
-  label: Subtitle
-  type: text
-  hidden: false
-  default: 
-  description: e.g. My story begins...
 - type: blocks
   name: sections
   label: Sections

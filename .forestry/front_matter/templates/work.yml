@@ -7,7 +7,7 @@ fields:
   type: text
   hidden: false
   default: ''
-  description: e.g. Meals OnCol
+  description: Client/Company name
   config:
     required: true
 - name: subtitle
@@ -15,27 +15,27 @@ fields:
   type: text
   hidden: false
   default: 
-  description: e.g. Meals for patients
+  description: Client/Company subtitle or description
 - name: date
   label: Work Date
   type: datetime
   hidden: false
   default: ''
-  description: When did this project complete?
+  description: Project completion date
   config:
     time_format: " "
 - type: tag_list
   label: Categories
   name: categories
-  description: Food, Home Decor, etc.
+  description: Project categories
 - type: image_gallery
   name: images
   label: Gallery
-  description: Portfolio of the work done
+  description: Project portfolio
 - type: textarea
   name: testimonial
   label: Testimonial
-  description: Quote from the client
+  description: Client/Company quote or testimonial
   config:
     wysiwyg: true
     schema:
