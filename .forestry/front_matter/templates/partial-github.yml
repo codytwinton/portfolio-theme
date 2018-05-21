@@ -20,12 +20,12 @@ fields:
   - type: text
     label: Repo
     name: repo
-    description: e.g. SwiftCommonMark
+    description: The name of the repo
     config:
       required: true
   - type: text
     name: owner
     label: Repo Owner
-    description: e.g. codytwinton
+    description: The owner's GitHub username
     config:
       required: true
