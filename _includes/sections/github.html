@@ -5,6 +5,8 @@
 <div id={{ include.section.id }} class="row" style="margin-bottom: 96px;">
   {% for item in include.section.repos limit: 12 %}
 
+  {%- assign github_link = "https://github.com/" | append: item.owner | append: "/" | append: item.repo -%}
+
   <div class="col-12 col-sm-6 col-md-4">
     <div style="margin-top: 32px; margin-bottom: 32px;">
       <h3>{{ item.title | default: item.repo }}</h3>
@@ -12,7 +14,7 @@
       <p id="{{ item.repo }}-languages"></p>
       <p>
         View this project on:
-        <a id="{{ item.repo }}-link" href="#" title="GitHub {{ item.repo }}" target="_blank">
+        <a id="{{ item.repo }}-link" href="{{ github_link }}" title="GitHub {{ item.repo }}" target="_blank">
           <i class="{{ site.data.icons.GitHub.fa_icon }} fa-lg"></i>
         </a>
       </p>
@@ -22,8 +24,10 @@
   {% endfor %}
 </div>
 
+{% comment %}
 {%- capture github_js -%}
 {%- include sections/github.js repos=include.section.repos -%}
 {%- endcapture %}
 
 <script>{{ github_js }}</script>
+{% endcomment %}

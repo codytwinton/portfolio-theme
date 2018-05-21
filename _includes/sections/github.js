@@ -8,7 +8,6 @@
       .then(function(response) {
         let descId = `${item.repo}-description`
         document.getElementById(descId).innerHTML = response.description
-        document.getElementById(`${item.repo}-link`).href = response.html_url
       })
       .catch(function(err) {
         console.error(err)
@@ -36,7 +35,7 @@ function requestRepo(owner, repo) {
     xhr.open('GET', url, true)
     xhr.setRequestHeader('Content-type', 'application/json')
     xhr.onload = function(event) {
-      if (this.readyState < 4) {
+      if (this.status < 200 || this.status > 299) {
         reject({ request: xhr })
       } else {
         let response = JSON.parse(this.responseText)
@@ -57,7 +56,7 @@ function requestRepoLanguages(owner, repo) {
     xhr.open('GET', url, true)
     xhr.setRequestHeader('Content-type', 'application/json')
     xhr.onload = function(event) {
-      if (this.readyState < 4) {
+      if (this.status < 200 || this.status > 299) {
         reject({ request: xhr })
       } else {
         let response = JSON.parse(this.responseText)
