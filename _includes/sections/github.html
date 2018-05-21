@@ -10,8 +10,12 @@
   <div class="col-12 col-sm-6 col-md-4">
     <div style="margin-top: 32px; margin-bottom: 32px;">
       <h3>{{ item.title | default: item.repo }}</h3>
-      <p id="{{ item.repo }}-description"></p>
-      <p id="{{ item.repo }}-languages"></p>
+      <p id="{{ item.repo }}-description">{{ item.description | markdownify }}</p>
+      <p id="{{ item.repo }}-languages">
+        {% for keyword in item.keywords %}
+        <span class="badge badge-secondary">{{ keyword }}</span>
+        {% endfor %}
+      </p>
       <p>
         View this project on:
         <a id="{{ item.repo }}-link" href="{{ github_link }}" title="GitHub {{ item.repo }}" target="_blank">
