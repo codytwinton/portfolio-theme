@@ -7,7 +7,7 @@ collections:
   _work:
     default_front_matter_template: work
   _pages:
-    default_front_matter_template: work
+    default_front_matter_template: pages
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
