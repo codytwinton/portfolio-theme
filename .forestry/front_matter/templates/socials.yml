@@ -1,0 +1,13 @@
+---
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Social Title
+  config:
+    required: true
+- type: text
+  name: url
+  label: URL
+  config:
+    required: true
