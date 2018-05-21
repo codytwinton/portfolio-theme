@@ -5,7 +5,7 @@ fields:
 - type: text
   name: id
   label: Section ID
-  description: 'The unique section used to reference in #links'
+  description: 'The unique section used to reference in #id-links'
   config:
     required: true
 - type: text
