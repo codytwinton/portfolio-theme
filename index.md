@@ -12,6 +12,8 @@ sections:
   repos:
   - repo: SwiftCommonMark
     owner: codytwinton
+  - repo: SwiftyVIPER
+    owner: codytwinton
   id: projects
   title: GitHub Projects
 - template: partial-columns
