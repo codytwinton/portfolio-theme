@@ -34,5 +34,17 @@ fields:
     type: text
     hidden: false
     description: The optional title to display
+  - type: tag_list
+    name: keywords
+    label: Keywords
+    description: The keywords associated with this project
+  - type: textarea
+    name: description
+    label: Description
+    description: The description of the project
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
   config:
     labelField: repo
