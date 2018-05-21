@@ -1,7 +1,5 @@
 ---
 title: Home
-position: 0
-subtitle: Example Subtitle
 display_title: Example Display Title
 sections:
 - template: partial-collection
