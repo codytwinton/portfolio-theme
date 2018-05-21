@@ -10,21 +10,19 @@ sections:
   id: portfolio
 - template: partial-github
   repos:
-  - title: 
-    repo: SwiftCommonMark
+  - repo: SwiftCommonMark
     owner: codytwinton
-  - title: 
-    repo: SwiftyVIPER
+  - repo: SwiftyVIPER
     owner: codytwinton
-  - title: Personal Website
+  - owner: codytwinton
     repo: codywinton.com
-    owner: codytwinton
-  - title: Portfolio Theme
+    title: Personal Website
+  - owner: codytwinton
     repo: portfolio-theme
-    owner: codytwinton
-  - title: Sarah Winton Design Website
+    title: Portfolio Theme
+  - owner: sarahwintondesign
     repo: sarahwintondesign.com
-    owner: sarahwintondesign
+    title: Sarah Winton Design
   id: projects
   title: GitHub Projects
 - template: partial-columns
