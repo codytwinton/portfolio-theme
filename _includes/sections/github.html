@@ -9,9 +9,13 @@
     <div style="margin-top: 32px; margin-bottom: 32px;">
       <h3>{{ item.title | default: item.repo }}</h3>
       <p id="{{ item.repo }}-description"></p>
-      <a id="{{ item.repo }}-link" href="#">
-        <h6 id="{{ item.repo }}-language"></h6>
-      </a>
+      <p id="{{ item.repo }}-languages"></p>
+      <p>
+        View this project on:
+        <a id="{{ item.repo }}-link" href="#" title="GitHub {{ item.repo }}" target="_blank">
+          <i class="{{ site.data.icons.GitHub.fa_icon }} fa-lg"></i>
+        </a>
+      </p>
     </div>
   </div>
 
