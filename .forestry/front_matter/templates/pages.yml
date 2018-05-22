@@ -14,6 +14,11 @@ fields:
   name: display_title
   label: Display Title
   description: e.g. About Me
+- type: include
+  name: nav_menu
+  label: Nav Menu
+  template: include-menu
+  description: The menu to display in the nav bar
 - type: blocks
   name: sections
   label: Sections
