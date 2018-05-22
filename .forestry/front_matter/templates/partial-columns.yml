@@ -19,8 +19,8 @@ fields:
     config:
       required: true
   - type: textarea
-    label: Body
-    name: body
+    label: Description
+    name: description
     description: The content to display
     config:
       wysiwyg: true

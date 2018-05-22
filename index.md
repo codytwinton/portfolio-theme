@@ -51,12 +51,12 @@ sections:
 - template: partial-columns
   columns:
   - title: About
-    body: I am a self-taught, multi-stack developer, with a focus on iOS development.
+    description: I am a self-taught, multi-stack developer, with a focus on iOS development.
       I've worked with a variety of companies and projects. Recently, I've accepted
       a job at Facebook as an iOS Developer.
     width: ''
   - title: Contact
-    body: '[cody@codywinton.com](mailto:cody@codywinton.com "Contact Me")'
+    description: '[cody@codywinton.com](mailto:cody@codywinton.com "Contact Me")'
     width: '4'
   column_count: '2'
   id: about

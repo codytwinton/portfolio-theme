@@ -20,7 +20,7 @@
 
   <div class="{{ col_class }}">
     <h2>{{item.title}}</h2>
-    {{ item.body | markdownify }}
+    {{ item.description | markdownify }}
   </div>
   {% endfor %}
 </div>

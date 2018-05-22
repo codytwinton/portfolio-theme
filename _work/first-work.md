@@ -5,7 +5,6 @@ subtitle: First Subtitle
 profiles:
 - url: https://www.example.com
   title: Website
-body: ''
 categories:
 - Design
 images:
