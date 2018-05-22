@@ -2,8 +2,9 @@
 
 Jekyll Theme for Personal Portfolio Website
 
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
+[![Current Release](https://img.shields.io/github/release/codytwinton/portfolio-theme.svg)](https://github.com/codytwinton/portfolio-theme/releases)
 [![Build Status](https://travis-ci.com/codytwinton/portfolio-theme.svg?branch=master)](https://travis-ci.com/codytwinton/portfolio-theme)
-![Current Release](https://img.shields.io/github/release/codytwinton/portfolio-theme.svg)
 
 ## Installation
 
