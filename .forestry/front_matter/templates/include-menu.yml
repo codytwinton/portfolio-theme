@@ -1,0 +1,13 @@
+---
+hide_body: true
+is_partial: true
+fields:
+- type: select
+  config:
+    source:
+      type: simple
+    options:
+    - home
+  label: Nav Menu
+  name: nav_menu
+  description: The menu to display in the nav bar
