@@ -21,7 +21,6 @@ sass:
 strict_front_matter: true
 
 # SEO
-description: Portfolio Website
 author:
   name: Portfolio Website
   twitter: codytwinton
