@@ -20,7 +20,29 @@ sass:
   style: compressed
 strict_front_matter: true
 
-# SEO
+
+# Collections
+collections:
+  work:
+    title: Work
+    output: true
+
+
+# Defaults for Layouts
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+- scope:
+    path: ''
+    type: work
+  values:
+    layout: page
+
+
+# jekyll-seo-tag settings
 author:
   name: Portfolio Website
   twitter: codytwinton
@@ -36,21 +58,9 @@ social:
 twitter:
   username: codytwinton
 
-# Collections
-collections:
-  work:
-    title: Work
-    output: true
 
-# Defaults for Layouts
-defaults:
-- scope:
-    path: ''
-    type: pages
-  values:
-    layout: page
-- scope:
-    path: ''
-    type: work
-  values:
-    layout: page
+# jekyll-titles-from-headings
+titles_from_headings:
+  enabled: false
+  strip_title: false
+  collections: false
