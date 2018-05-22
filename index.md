@@ -1,6 +1,6 @@
 ---
 title: Home
-display_title: Example Display Title
+display_title: Cody Winton
 sections:
 - template: partial-collection
   collection: work
@@ -51,10 +51,9 @@ sections:
 - template: partial-columns
   columns:
   - title: About
-    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Velit scelerisque in dictum
-      non consectetur. Id eu nisl nunc mi ipsum faucibus vitae. In hac habitasse platea
-      dictumst. Id donec ultrices tincidunt arcu non sodales.
+    body: I am a self-taught, multi-stack developer, with a focus on iOS development.
+      I've worked with a variety of companies and projects. Recently, I've accepted
+      a job at Facebook as an iOS Developer.
     width: ''
   - title: Contact
     body: '[cody@codywinton.com](mailto:cody@codywinton.com "Contact Me")'
@@ -63,4 +62,4 @@ sections:
   id: about
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+I'm a multi-stack dev & creative problem-solver. I like working with cool stuff. Follow me everywhere: @codytwinton
