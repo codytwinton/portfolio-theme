@@ -2,7 +2,7 @@
 # Jekyll Settings
 title: Portfolio Website
 timezone: America/Chicago
-url: https://codytwinton.github.io/portfolio-theme/
+url: https://codytwinton.github.io/portfolio-theme
 baseurl: 
 # Enable once Forestry supports custom collections_dir
 # collections_dir: collections

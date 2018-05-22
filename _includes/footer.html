@@ -8,7 +8,7 @@
       <ul class="list-inline">
         {% for social in site.data.socials %}
         <li class="list-inline-item">
-          <a href={{ social.url | escape }} title="{{ social.title }}" target="_blank" style="font-size:1rem; margin: 0 7px;">
+          <a href="{{ social.url | escape }}" title="{{ social.title }}" target="_blank" style="font-size:1rem; margin: 0 7px;">
             <i class="{{ site.data.icons[social.title].fa_icon }}"></i>
           </a>
         </li>
