@@ -12,14 +12,12 @@ fields:
   name: title
   label: Title
   description: The optional title displayed above the collections
-- type: select
-  name: collection
+- type: list
+  name: work
+  label: Work
+  description: The work to display
   config:
+    use_select: true
     source:
-      type: simple
-    required: true
-    options:
-    - work
-  label: Collection
-  description: The collection to display
-  default: work
+      type: pages
+      section: work
