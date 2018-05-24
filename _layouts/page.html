@@ -14,7 +14,7 @@ layout: default
   {% for section in page.sections %}
 
     {% case section.template %}
-    {% when "partial-collection" %}
+    {% when "partial-work" %}
       {% include sections/collection.html section=section %}
     {% when "partial-columns" %}
       {% include sections/columns.html section=section %}

@@ -24,6 +24,6 @@ fields:
   label: Sections
   template_types:
   - partial-github
-  - partial-collection
+  - partial-work
   - partial-columns
   description: The sections to include in the page

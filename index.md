@@ -2,8 +2,7 @@
 title: Home
 display_title: Cody Winton
 sections:
-- template: partial-collection
-  collection: work
+- template: partial-work
   title: Work
   id: work
   work:
