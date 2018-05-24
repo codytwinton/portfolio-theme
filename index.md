@@ -6,6 +6,13 @@ sections:
   collection: work
   title: Work
   id: work
+  work:
+  - _work/first-work.md
+  - _work/second-work.md
+  - _work/third-work.md
+  - _work/swiftcommonmark.md
+  - _work/swiftyviper.md
+  - _work/portfolio-theme.md
 - template: partial-columns
   columns:
   - title: About
