@@ -1,6 +1,7 @@
 ---
 title: Home
 display_title: Cody Winton
+nav_menu: home
 sections:
 - template: partial-work
   title: Work
@@ -24,7 +25,6 @@ sections:
     width: '4'
   column_count: '2'
   id: about
-nav_menu: home
 ---
 
 I'm a multi-stack dev & creative problem-solver. I like working with cool stuff. Follow me everywhere: @codytwinton
