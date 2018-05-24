@@ -52,3 +52,5 @@ fields:
       label: Font Type
       name: type
       default: sans-serif
+data_files:
+- _data/theme.yml
