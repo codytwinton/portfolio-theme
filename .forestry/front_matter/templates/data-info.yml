@@ -27,3 +27,5 @@ fields:
     name: ga_tracking_id
     label: Google Analytics Tracking ID
     description: e.g UA-123456789-1
+data_files:
+- _data/info.yml
