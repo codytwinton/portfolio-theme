@@ -6,7 +6,7 @@ sections:
 - template: partial-work
   title: Work
   id: work
-  work:
+  works:
   - _work/first-work.md
   - _work/second-work.md
   - _work/third-work.md

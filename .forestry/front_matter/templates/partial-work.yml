@@ -13,7 +13,7 @@ fields:
   label: Title
   description: The optional title displayed above the collections
 - type: list
-  name: work
+  name: works
   label: Work
   description: The work to display
   config:

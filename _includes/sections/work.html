@@ -3,9 +3,7 @@
 </h2>
 
 <div id={{ include.section.id }} class="row" style="margin-bottom: 96px;">
-  {% assign collection = site[include.section.collection] | sort: "date" | reverse %}
-
-  {% for item in collection limit: 12 %}
+  {% for item in include.section.works %}
 
   {% if item.images.first %}
     <div class="col-12 col-sm-6 col-md-4" style="text-align: center;">
@@ -17,6 +15,28 @@
       </a>
     </div>
   {% endif %}
+
+  <!-- GitHub Version -->
+
+  {%- assign github_link = "https://github.com/" | append: item.owner | append: "/" | append: item.repo -%}
+
+  <div class="col-12 col-sm-6 col-md-4">
+    <div style="margin-top: 32px; margin-bottom: 32px;">
+      <h3>{{ item.title | default: item.repo }}</h3>
+      <p id="{{ item.repo }}-description">{{ item.description | markdownify }}</p>
+      <p id="{{ item.repo }}-languages">
+        {% for keyword in item.keywords %}
+        <span class="badge badge-secondary">{{ keyword }}</span>
+        {% endfor %}
+      </p>
+      <p>
+        View this project on:
+        <a id="{{ item.repo }}-link" href="{{ github_link }}" title="GitHub {{ item.repo }}" target="_blank">
+          <i class="{{ site.data.icons.GitHub.fa_icon }} fa-lg"></i>
+        </a>
+      </p>
+    </div>
+  </div>
 
   {% endfor %}
 </div>
