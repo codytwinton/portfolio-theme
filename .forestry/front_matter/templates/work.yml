@@ -45,24 +45,20 @@ fields:
   label: Profiles
   description: Website, Facebook, etc.
   fields:
-  - type: select
+  - type: text
+    label: Title
+    name: title
+    description: e.g. Facebook
     config:
-      source:
-        type: simple
       required: true
-      options:
-      - website
-      - github
-      - facebook
-    label: Type
-    name: type
-    default: website
   - type: text
     name: url
     label: URL
     description: e.g. https://facebook.com
     config:
       required: true
+  config:
+    labelField: title
 - type: image_gallery
   name: images
   label: Work Portfolio
