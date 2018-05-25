@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SwiftCommonMark
-date: 2018-03-03 22:00:00 -0800
+date: 2018-03-04 06:00:00 +0000
 subtitle: CommonMark parsing built in pure Swift
 homepage: https://github.com/codytwinton/SwiftCommonMark
 categories:
@@ -10,4 +10,8 @@ categories:
 - Markdown
 images: []
 type: github
+profiles:
+- type: GitHub
+  title: GitHub
+  url: https://github.com/codytwinton/SwiftCommonMark
 ---
