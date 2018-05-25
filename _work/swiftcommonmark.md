@@ -11,7 +11,7 @@ categories:
 images: []
 type: github
 profiles:
-- type: GitHub
+- type: website
   title: GitHub
   url: https://github.com/codytwinton/SwiftCommonMark
 ---
