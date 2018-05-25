@@ -51,12 +51,12 @@ fields:
         type: simple
       required: true
       options:
-      - Website
-      - Facebook
-      - GitHub
+      - website
+      - github
+      - facebook
     label: Type
     name: type
-    default: Website
+    default: website
   - type: text
     name: url
     label: URL
