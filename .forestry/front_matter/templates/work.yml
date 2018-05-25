@@ -9,11 +9,11 @@ fields:
       type: simple
     required: true
     options:
-    - General
-    - GitHub Project
+    - github
+    - graphical
   label: Type
   description: Work type
-  default: General
+  default: github
 - name: title
   label: Title
   type: text

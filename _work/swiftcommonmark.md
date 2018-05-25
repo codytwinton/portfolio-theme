@@ -9,5 +9,5 @@ categories:
 - CommonMark
 - Markdown
 images: []
-type: GitHub Project
+type: github
 ---

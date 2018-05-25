@@ -1,6 +1,7 @@
 ---
 title: Second Work
 date: 2017-10-20 05:00:00 +0000
+type: graphical
 subtitle: Second Subtitle
 profiles:
 - url: https://www.example.com

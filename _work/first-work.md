@@ -2,6 +2,7 @@
 title: First Work
 date: 2017-12-16 15:31:00 +0000
 subtitle: First Subtitle
+type: graphical
 profiles:
 - url: https://www.example.com
   title: Website
