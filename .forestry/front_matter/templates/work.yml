@@ -57,6 +57,17 @@ fields:
     description: e.g. https://facebook.com
     config:
       required: true
+  - type: select
+    name: icon
+    config:
+      source:
+        type: datafiles
+        file: _data-icons-yml
+        path: icons
+      required: true
+    label: Icon
+    description: Font Awesome icon
+    default: Facebook
   config:
     labelField: title
 - type: image_gallery

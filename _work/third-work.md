@@ -9,6 +9,7 @@ subtitle: Testing subtitle
 profiles:
 - title: Website
   url: http://example.com
+  icon: Globe
 categories:
 - Third
 - Category

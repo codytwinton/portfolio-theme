@@ -6,6 +6,7 @@ type: graphical
 profiles:
 - title: Website
   url: https://www.example.com
+  icon: Globe
 categories:
 - Design
 images:
