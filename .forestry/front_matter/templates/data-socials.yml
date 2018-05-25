@@ -13,6 +13,6 @@ fields:
     template: include-social
     description: Social Defaults
   config:
-    labelField: title
+    labelField: ''
 data_files:
 - _data/socials.yml
