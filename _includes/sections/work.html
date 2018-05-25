@@ -1,0 +1,51 @@
+<h2 style="margin-top: 96px;">
+  {{ include.section.title }}
+</h2>
+
+<div id={{ include.section.id }} class="row" style="margin-bottom: 96px;">
+  {% for work_path in include.section.works %}
+  {%- assign work = site.work | where: "path", work_path | first -%}
+
+  {% case work.type %}
+  {% when "graphical" %}
+    {% if work.images.first %}
+    <div class="col-12 col-sm-6 col-md-4" style="text-align: center;">
+      <a href={{ work.url }} class="overlay-container">
+        <img class="img" src={{ work.images.first }} alt="{{ work.title }}" style="max-width: 100%; display: block;">
+        <div class="overlay">
+          <p class="overlay-text">{{ work.title }}</p>
+        </div>
+      </a>
+    </div>
+    {% endif %}
+
+  {% when "github" %}
+    <div class="col-12 col-sm-6 col-md-4">
+      <div style="margin-top: 32px; margin-bottom: 32px;">
+        <h3>{{ work.title }}</h3>
+        <p><strong>{{ work.subtitle }}</strong></p>
+
+        {{ work.content }}
+
+        <p>
+          {% for category in work.categories %}
+          <span class="badge badge-secondary">{{ category }}</span>
+          {% endfor %}
+        </p>
+
+        {% assign profile = work.profiles.first %}
+
+        {% if profile %}
+          <p>
+            View this project on:
+            <a href="{{ profile.url }}" title="{{ profile.title }}" target="_blank">
+              <i class="{{ site.data.icons[profile.title].fa_icon }} fa-lg"></i>
+            </a>
+          </p>
+        {% endif %}
+      </div>
+    </div>
+  {% endcase %}
+
+  {% endfor %}
+</div>

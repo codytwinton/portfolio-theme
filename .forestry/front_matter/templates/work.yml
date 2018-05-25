@@ -9,11 +9,11 @@ fields:
       type: simple
     required: true
     options:
-    - General
-    - GitHub Project
+    - github
+    - graphical
   label: Type
   description: Work type
-  default: General
+  default: github
 - name: title
   label: Title
   type: text
@@ -36,14 +36,29 @@ fields:
   description: Work date
   config:
     time_format: " "
-- type: text
-  name: homepage
-  label: Homepage
-  description: Client or project homepage
 - type: tag_list
   label: Categories
   name: categories
   description: Work categories
+- type: field_group_list
+  name: profiles
+  label: Profiles
+  description: Website, Facebook, etc.
+  fields:
+  - type: text
+    label: Title
+    name: title
+    description: e.g. Facebook
+    config:
+      required: true
+  - type: text
+    name: url
+    label: URL
+    description: e.g. https://facebook.com
+    config:
+      required: true
+  config:
+    labelField: title
 - type: image_gallery
   name: images
   label: Work Portfolio

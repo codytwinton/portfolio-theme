@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Portfolio Theme
-type: GitHub Project
+type: github
 date: 2018-05-20 09:04:56 -0700
-homepage: https://github.com/codytwinton/portfolio-theme
+profiles:
+- title: GitHub
+  url: https://github.com/codytwinton/portfolio-theme
 categories:
 - Jekyll
 - Theme
