@@ -12,4 +12,5 @@ type: github
 profiles:
 - title: GitHub
   url: https://github.com/codytwinton/SwiftCommonMark
+  icon: GitHub
 ---
