@@ -1,15 +1,25 @@
 ---
 - title: Facebook
   url: https://facebook.com/codytwinton
+  icon: Facebook
 - title: Twitter
   url: https://twitter.com/codytwinton
+  icon: Twitter
 - title: Instagram
   url: https://instagram.com/codytwinton
+  icon: Instagram
 - title: Medium
   url: https://medium.com/@codytwinton
+  icon: Medium
 - title: LinkedIn
   url: https://www.linkedin.com/in/codytwinton
+  icon: LinkedIn
 - title: GitHub
   url: https://github.com/codytwinton
+  icon: GitHub
 - title: Stack Overflow
   url: https://stackoverflow.com/users/2344897
+  icon: Stack Overflow
+- title: Angel List
+  url: https://angel.co/codytwinton
+  icon: Angel List
