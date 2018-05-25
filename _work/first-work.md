@@ -12,7 +12,6 @@ images:
 - "/uploads/2018/05/20/example-logo.png"
 - "/uploads/2018/05/20/example-logo.png"
 - "/uploads/2018/05/20/example-logo.png"
-testimonial: Example First Testimonial
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
