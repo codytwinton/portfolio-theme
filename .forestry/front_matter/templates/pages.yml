@@ -26,3 +26,6 @@ fields:
   - partial-work
   - partial-columns
   description: The sections to include in the page
+pages:
+- 404.md
+- index.md
