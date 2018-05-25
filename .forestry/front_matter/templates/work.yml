@@ -58,12 +58,6 @@ fields:
     name: type
     default: Website
   - type: text
-    name: title
-    label: Title
-    config:
-      required: true
-    description: e.g. Facebook
-  - type: text
     name: url
     label: URL
     description: e.g. https://facebook.com
