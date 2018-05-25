@@ -1,7 +1,7 @@
 <footer style="margin-bottom: 96px;">
   <div class="row footer-row">
     <div class="col-12 col-md-6">
-      <p>Copyright {{ "©" }} {{ site.time | date: "%Y" }} {{ site.data.info.company_name }}</p>
+      <p>Copyright {{ "©" }} {{ site.time | date: "%Y" }} {{ site.data.info.company_name | default: site.data.info.name }}</p>
     </div>
 
     <div class="col-12 col-md-6 footer-social-col">
