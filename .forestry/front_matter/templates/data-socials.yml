@@ -7,11 +7,9 @@ fields:
   label: Socials
   description: Social and online accounts
   fields:
-  - type: include
-    name: social
-    label: Social
-    template: include-social
-    description: Social Defaults
+  - type: text
+    name: title
+    label: Title
   config:
     labelField: ''
 data_files:
