@@ -24,3 +24,4 @@ fields:
   label: Icon
   name: icon
   description: Font Awesome icon
+  default: Angel List
