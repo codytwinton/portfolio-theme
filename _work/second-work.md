@@ -5,7 +5,7 @@ type: graphical
 subtitle: Second Subtitle
 profiles:
 - url: https://www.example.com
-  type: website
+  title: Website
 categories:
 - Development
 images:

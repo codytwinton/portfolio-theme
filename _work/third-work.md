@@ -7,7 +7,7 @@ images:
 - "/uploads/2018/05/20/example-logo.png"
 subtitle: Testing subtitle
 profiles:
-- type: website
+- title: Website
   url: http://example.com
 categories:
 - Third

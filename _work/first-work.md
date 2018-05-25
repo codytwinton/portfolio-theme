@@ -4,7 +4,7 @@ date: 2017-12-16 15:31:00 +0000
 subtitle: First Subtitle
 type: graphical
 profiles:
-- type: website
+- title: Website
   url: https://www.example.com
 categories:
 - Design
