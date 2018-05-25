@@ -6,7 +6,9 @@
   {% for work_path in include.section.works %}
   {%- assign work = site.work | where: "path", work_path | first -%}
 
-  {% if work.images.first %}
+  {% case work.type %}
+  {% when "graphical" %}
+    {% if work.images.first %}
     <div class="col-12 col-sm-6 col-md-4" style="text-align: center;">
       <a href={{ work.url }} class="overlay-container">
         <img class="img" src={{ work.images.first }} alt="{{ work.title }}" style="max-width: 100%; display: block;">
@@ -15,29 +17,35 @@
         </div>
       </a>
     </div>
-  {% endif %}
+    {% endif %}
 
-  <!-- GitHub Version -->
+  {% when "github" %}
+    <div class="col-12 col-sm-6 col-md-4">
+      <div style="margin-top: 32px; margin-bottom: 32px;">
+        <h3>{{ work.title }}</h3>
+        <p><strong>{{ work.subtitle }}</strong></p>
 
-  {%- assign github_link = "https://github.com/" | append: work.owner | append: "/" | append: work.repo -%}
+        {{ work.content }}
 
-  <div class="col-12 col-sm-6 col-md-4">
-    <div style="margin-top: 32px; margin-bottom: 32px;">
-      <h3>{{ work.title | default: work.repo }}</h3>
-      <p id="{{ work.repo }}-description">{{ work.description | markdownify }}</p>
-      <p id="{{ work.repo }}-languages">
-        {% for keyword in work.keywords %}
-        <span class="badge badge-secondary">{{ keyword }}</span>
-        {% endfor %}
-      </p>
-      <p>
-        View this project on:
-        <a id="{{ work.repo }}-link" href="{{ github_link }}" title="GitHub {{ work.repo }}" target="_blank">
-          <i class="{{ site.data.icons.GitHub.fa_icon }} fa-lg"></i>
-        </a>
-      </p>
+        <p>
+          {% for category in work.categories %}
+          <span class="badge badge-secondary">{{ category }}</span>
+          {% endfor %}
+        </p>
+
+        {% assign profile = work.profiles.first %}
+
+        {% if profile %}
+          <p>
+            View this project on:
+            <a href="{{ profile.url }}" title="{{ profile.title }}" target="_blank">
+              <i class="{{ site.data.icons[profile.title].fa_icon }} fa-lg"></i>
+            </a>
+          </p>
+        {% endif %}
+      </div>
     </div>
-  </div>
+  {% endcase %}
 
   {% endfor %}
 </div>
