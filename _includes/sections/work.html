@@ -3,14 +3,15 @@
 </h2>
 
 <div id={{ include.section.id }} class="row" style="margin-bottom: 96px;">
-  {% for item in include.section.works %}
+  {% for work_path in include.section.works %}
+  {%- assign work = site.work | where: "path", work_path | first -%}
 
-  {% if item.images.first %}
+  {% if work.images.first %}
     <div class="col-12 col-sm-6 col-md-4" style="text-align: center;">
-      <a href={{ item.url }} class="overlay-container">
-        <img class="img" src={{ item.images.first }} alt="{{ item.title }}" style="max-width: 100%; display: block;">
+      <a href={{ work.url }} class="overlay-container">
+        <img class="img" src={{ work.images.first }} alt="{{ work.title }}" style="max-width: 100%; display: block;">
         <div class="overlay">
-          <p class="overlay-text">{{item.title}}</p>
+          <p class="overlay-text">{{ work.title }}</p>
         </div>
       </a>
     </div>
@@ -18,20 +19,20 @@
 
   <!-- GitHub Version -->
 
-  {%- assign github_link = "https://github.com/" | append: item.owner | append: "/" | append: item.repo -%}
+  {%- assign github_link = "https://github.com/" | append: work.owner | append: "/" | append: work.repo -%}
 
   <div class="col-12 col-sm-6 col-md-4">
     <div style="margin-top: 32px; margin-bottom: 32px;">
-      <h3>{{ item.title | default: item.repo }}</h3>
-      <p id="{{ item.repo }}-description">{{ item.description | markdownify }}</p>
-      <p id="{{ item.repo }}-languages">
-        {% for keyword in item.keywords %}
+      <h3>{{ work.title | default: work.repo }}</h3>
+      <p id="{{ work.repo }}-description">{{ work.description | markdownify }}</p>
+      <p id="{{ work.repo }}-languages">
+        {% for keyword in work.keywords %}
         <span class="badge badge-secondary">{{ keyword }}</span>
         {% endfor %}
       </p>
       <p>
         View this project on:
-        <a id="{{ item.repo }}-link" href="{{ github_link }}" title="GitHub {{ item.repo }}" target="_blank">
+        <a id="{{ work.repo }}-link" href="{{ github_link }}" title="GitHub {{ work.repo }}" target="_blank">
           <i class="{{ site.data.icons.GitHub.fa_icon }} fa-lg"></i>
         </a>
       </p>
