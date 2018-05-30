@@ -12,18 +12,20 @@ fields:
     label: Colors
     description: Brand colors, font colors, etc.
     fields:
-    - type: text
+    - type: color
+      config:
+        color_format: Hex
+        required: true
       label: Brand
       name: brand
-      description: Main brand hex color
+      description: Main brand color
+    - type: color
       config:
+        color_format: Hex
         required: true
-    - type: text
-      name: font
       label: Font
-      description: Text hex color
-      config:
-        required: true
+      name: font
+      description: Text color
   - type: field_group_list
     label: Google Fonts
     name: google_fonts
