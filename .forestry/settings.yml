@@ -11,7 +11,7 @@ collections:
 - path: _posts
   create: none
   hidden: true
-- path: _pages
+- path: 
   create: none
 upload_dir: uploads
 public_path: "/uploads"
