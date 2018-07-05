@@ -4,8 +4,15 @@ auto_deploy: false
 admin_path: "/admin/"
 webhook_url: 
 collections:
-  _work:
-    default_front_matter_template: work
+- path: _work
+  default_front_matter_template: work
+  templates:
+  - work
+- path: _posts
+  create: none
+  hidden: true
+- path: _pages
+  create: none
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
