@@ -23,7 +23,7 @@ sections:
   label: Information
   create: all
   match: "**/*"
-  exclude: "*(menus|icons).yml"
+  exclude: "*(menus.yml|icons.yml)"
   new_doc_ext: yml
   templates:
   - data-icons
