@@ -6,10 +6,15 @@
 
     <div class="col-12 col-md-6 footer-social-col">
       <ul class="list-inline">
-        {% for social in site.data.socials %}
+        {% for social in site.data.socials.socials %}
         <li class="list-inline-item">
           <a href="{{ social.url | escape }}" title="{{ social.title }}" target="_blank" style="font-size:1rem; margin: 0 7px;">
-            <i class="{{ site.data.icons[social.icon].fa_icon }}"></i>
+            {% for icon in site.data.icons.icons %}
+              {%- if icon.title == social.icon -%}
+                <i class="{{ icon.fa_icon }}"></i>
+                {% break %}
+              {%- endif -%}
+            {% endfor %}
           </a>
         </li>
         {%- endfor -%}
