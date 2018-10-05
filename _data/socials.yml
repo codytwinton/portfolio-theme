@@ -1,5 +1,8 @@
 ---
 socials:
+- title: Test
+  url: Test
+  icon: File with Text
 - title: Facebook
   url: https://facebook/com/codytiwnton
   icon: Check
