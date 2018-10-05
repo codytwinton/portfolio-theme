@@ -1,4 +1,5 @@
 ---
+label: pages
 hide_body: false
 is_partial: false
 fields:
@@ -26,3 +27,6 @@ fields:
   - partial-work
   - partial-columns
   description: The sections to include in the page
+pages:
+- index.md
+- 404.md
