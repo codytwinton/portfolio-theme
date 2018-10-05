@@ -45,3 +45,6 @@ Users:
   fa_icon: fas fa-users
 Vimeo:
   fa_icon: fab fa-vimeo-v
+icons:
+- title: Facebook
+  fa_icon: fab fa-facebook

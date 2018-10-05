@@ -22,3 +22,5 @@ fields:
       required: true
   config:
     labelField: title
+pages:
+- _data/icons.yml
