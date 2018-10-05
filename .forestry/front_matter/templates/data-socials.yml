@@ -24,13 +24,14 @@ fields:
     name: icon
     config:
       source:
-        type: datafiles
-        file: _data-icons-yml
-        path: icons
+        type: documents
+        file: _data/icons.yml
+        path: ''
+        section: information
       required: true
     label: Icon
     description: Font awesome icon
-    default: Facebook
+    default: ''
   config:
     labelField: title
 pages:
