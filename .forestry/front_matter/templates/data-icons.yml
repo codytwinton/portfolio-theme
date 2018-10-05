@@ -4,9 +4,9 @@ hide_body: true
 is_partial: false
 fields:
 - type: field_group_list
-  name: socials
-  label: Socials
-  description: Social and online accounts
+  name: icons
+  label: Icons
+  description: Font Awesome Icons
   fields:
   - type: text
     label: Title
@@ -14,6 +14,5 @@ fields:
     description: e.g. Facebook
     config:
       required: true
-- type: text
-  name: test
-  label: Test
+  config:
+    labelField: title
