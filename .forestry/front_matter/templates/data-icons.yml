@@ -3,6 +3,17 @@ label: data-icons
 hide_body: true
 is_partial: false
 fields:
+- type: field_group_list
+  name: socials
+  label: Socials
+  description: Social and online accounts
+  fields:
+  - type: text
+    label: Title
+    name: title
+    description: e.g. Facebook
+    config:
+      required: true
 - type: text
   name: test
   label: Test
