@@ -5,6 +5,16 @@ admin_path: "/admin/"
 webhook_url: 
 sections:
 - type: directory
+  path: _data
+  label: Information
+  create: all
+  match: "**/*"
+  new_doc_ext: ".yml"
+  templates:
+  - data-socials
+  - data-info
+  - data-theme
+- type: directory
   path: _work
   label: Work
   create: all

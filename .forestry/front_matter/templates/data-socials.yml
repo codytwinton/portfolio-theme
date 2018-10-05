@@ -33,5 +33,3 @@ fields:
     default: Facebook
   config:
     labelField: title
-data_files:
-- _data/socials.yml
