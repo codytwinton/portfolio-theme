@@ -26,6 +26,7 @@ sections:
   exclude: "*menus.yml"
   new_doc_ext: yml
   templates:
+  - data-icons
   - data-socials
   - data-info
   - data-theme
