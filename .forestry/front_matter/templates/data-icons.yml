@@ -14,5 +14,11 @@ fields:
     description: e.g. Facebook
     config:
       required: true
+  - type: text
+    label: FAIcon
+    name: fa_icon
+    description: e.g. fab fa-facebook
+    config:
+      required: true
   config:
     labelField: title
