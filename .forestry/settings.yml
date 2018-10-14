@@ -4,12 +4,6 @@ auto_deploy: false
 admin_path: "/admin/"
 webhook_url: 
 sections:
-- type: directory
-  path: _data
-  label: Icons
-  create: all
-  match: "*icons.yml"
-  new_doc_ext: ".yml"
 - type: document
   path: README.md
   label: README
@@ -29,10 +23,10 @@ sections:
   label: Pages
   create: none
 - type: heading
-  label: Info
+  label: Information
 - type: directory
   path: _data
-  label: Information
+  label: Data
   create: all
   match: "**/*"
   exclude: "{menus,icons}.yml"
@@ -42,6 +36,12 @@ sections:
   - data-socials
   - data-info
   - data-theme
+- type: directory
+  path: _data
+  label: Icons
+  create: all
+  match: "*icons.yml"
+  new_doc_ext: yml
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
