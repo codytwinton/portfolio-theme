@@ -4,6 +4,12 @@ auto_deploy: false
 admin_path: "/admin/"
 webhook_url: 
 sections:
+- type: directory
+  path: _data
+  label: Icons
+  create: all
+  match: "*icons.yml"
+  new_doc_ext: ".yml"
 - type: document
   path: README.md
   label: README
