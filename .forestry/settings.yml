@@ -36,9 +36,8 @@ sections:
   - data-info
   - data-theme
 - type: document
-  path: test.yml
+  path: _data/test.yml
   label: Icons Data
-  match: "*icons.yml"
   new_doc_ext: yml
 upload_dir: uploads
 public_path: "/uploads"
