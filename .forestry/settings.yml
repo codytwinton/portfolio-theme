@@ -27,10 +27,10 @@ sections:
 - type: directory
   path: _data
   label: Data
-  create: all
+  create: none
   match: "**/*"
   exclude: "{menus,icons}.yml"
-  new_doc_ext: yml
+  new_doc_ext: ".yml"
   templates:
   - data-socials
   - data-info
@@ -38,7 +38,6 @@ sections:
 - type: document
   path: _data/icons.yml
   label: Icons Data
-  match: "**/*"
   read_only: true
 upload_dir: uploads
 public_path: "/uploads"
