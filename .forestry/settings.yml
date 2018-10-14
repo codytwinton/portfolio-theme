@@ -35,10 +35,6 @@ sections:
   - data-socials
   - data-info
   - data-theme
-- type: document
-  path: _data/test.yml
-  label: Icons Data
-  new_doc_ext: yml
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
