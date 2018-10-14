@@ -4,11 +4,6 @@ auto_deploy: false
 admin_path: "/admin/"
 webhook_url: 
 sections:
-- type: document
-  path: _data/icons.yml
-  label: Icons
-  match: "**/*"
-  read_only: true
 - type: directory
   path: _work
   label: Work
@@ -35,6 +30,11 @@ sections:
   - data-socials
   - data-info
   - data-theme
+- type: document
+  path: _data/icons.yml
+  label: Icons
+  match: "**/*"
+  read_only: true
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
