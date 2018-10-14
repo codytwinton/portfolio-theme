@@ -29,7 +29,7 @@ sections:
   label: Data
   create: all
   match: "**/*"
-  exclude: "{menus, icons}.yml"
+  exclude: "{menus,icons}.yml"
   new_doc_ext: yml
   templates:
   - data-socials
