@@ -9,12 +9,7 @@
         {% for social in site.data.socials.socials %}
         <li class="list-inline-item">
           <a href="{{ social.url | escape }}" title="{{ social.title }}" target="_blank" style="font-size:1rem; margin: 0 7px;">
-            {% for icon in site.data.icons.icons %}
-              {%- if icon.title == social.icon -%}
-                <i class="{{ icon.fa_icon }}"></i>
-                {% break %}
-              {%- endif -%}
-            {% endfor %}
+            <i class="{{ site.data.icons[social.icon].fa_icon }}"></i>
           </a>
         </li>
         {%- endfor -%}

@@ -39,12 +39,7 @@
           <p>
             View this project on:
             <a href="{{ profile.url }}" title="{{ profile.title }}" target="_blank">
-              {% for icon in site.data.icons.icons %}
-                {%- if icon.title == social.icon -%}
-                  <i class="{{ icon.fa_icon }} fa-lg"></i>
-                  {% break %}
-                {%- endif -%}
-              {% endfor %}
+              <i class="{{ site.data.icons[profile.icon].fa_icon }} fa-lg"></i>
             </a>
           </p>
         {% endif %}

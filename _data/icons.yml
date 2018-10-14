@@ -1,48 +1,47 @@
 ---
-icons:
-- title: Angel List
+Angel List:
   fa_icon: fab fa-angellist
-- title: Check
+Check:
   fa_icon: fas fa-check
-- title: Code
+Code:
   fa_icon: fas fa-code
-- title: Cogs
+Cogs:
   fa_icon: fas fa-cogs
-- title: Compass
+Compass:
   fa_icon: fas fa-compass
-- title: Facebook
+Facebook:
   fa_icon: fab fa-facebook-f
-- title: File with Text
+File with Text:
   fa_icon: fas fa-tasks
-- title: GitHub
+GitHub:
   fa_icon: fab fa-github
-- title: Globe
+Globe:
   fa_icon: fas fa-globe
-- title: Graduation Cap
+Graduation Cap:
   fa_icon: fas fa-graduation-cap
-- title: Instagram
+Instagram:
   fa_icon: fab fa-instagram
-- title: LinkedIn
+LinkedIn:
   fa_icon: fab fa-linkedin-in
-- title: Medium
+Medium:
   fa_icon: fab fa-medium-m
-- title: Play Circle
+Play Circle:
   fa_icon: fas fa-play-circle
-- title: Plug
+Plug:
   fa_icon: fas fa-plug
-- title: Refresh
+Refresh:
   fa_icon: fas fa-sync-alt
-- title: Stack Overflow
+Stack Overflow:
   fa_icon: fab fa-stack-overflow
-- title: Tags
+Tags:
   fa_icon: fas fa-tags
-- title: Terminal
+Terminal:
   fa_icon: fas fa-terminal
-- title: Twitter
+Twitter:
   fa_icon: fab fa-twitter
-- title: User
+User:
   fa_icon: fas fa-user
-- title: Users
+Users:
   fa_icon: fas fa-users
-- title: Vimeo
+Vimeo:
   fa_icon: fab fa-vimeo-v
