@@ -35,6 +35,11 @@ sections:
   - data-socials
   - data-info
   - data-theme
+- type: document
+  path: _data/icons.yml
+  label: Icons Data
+  match: "**/*"
+  read_only: true
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
