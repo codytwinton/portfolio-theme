@@ -4,6 +4,11 @@ auto_deploy: false
 admin_path: "/admin/"
 webhook_url: 
 sections:
+- type: document
+  path: _data/icons.yml
+  label: Icons
+  match: "**/*"
+  read_only: true
 - type: directory
   path: _work
   label: Work
