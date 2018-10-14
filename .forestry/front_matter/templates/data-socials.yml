@@ -25,13 +25,13 @@ fields:
     config:
       source:
         type: documents
-        file: _data/icons.yml
+        file: _data/info.yml
         path: ''
-        section: information
+        section: ''
       required: true
     label: Icon
     description: Font awesome icon
-    default: ''
+    default: name
   config:
     labelField: title
 pages:
