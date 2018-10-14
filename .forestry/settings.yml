@@ -30,18 +30,11 @@ sections:
   create: none
   match: "**/*"
   exclude: "{menus,icons}.yml"
-  new_doc_ext: ".yml"
+  new_doc_ext: yml
   templates:
   - data-socials
   - data-info
   - data-theme
-- type: directory
-  path: _data
-  label: Icons Data
-  create: none
-  match: "*icons.yml"
-  read_only: true
-  new_doc_ext: ".yml"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
