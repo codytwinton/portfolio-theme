@@ -20,6 +20,10 @@ sections:
   create: none
 - type: heading
   label: Information
+- type: document
+  path: _data/socials.yml
+  label: Social Accounts
+  match: "**/*"
 - type: directory
   path: _data
   label: Data
