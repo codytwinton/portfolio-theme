@@ -42,6 +42,10 @@ sections:
   create: all
   match: "*icons.yml"
   new_doc_ext: yml
+- type: document
+  path: _data
+  label: Icons File
+  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
