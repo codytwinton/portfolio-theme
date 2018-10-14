@@ -29,23 +29,12 @@ sections:
   label: Data
   create: all
   match: "**/*"
-  exclude: "{menus,icons}.yml"
+  exclude: "{menus, icons}.yml"
   new_doc_ext: yml
   templates:
-  - data-icons
   - data-socials
   - data-info
   - data-theme
-- type: directory
-  path: _data
-  label: Icons
-  create: all
-  match: "*icons.yml"
-  new_doc_ext: yml
-- type: document
-  path: _data
-  label: Icons File
-  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
