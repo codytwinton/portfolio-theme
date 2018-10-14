@@ -22,6 +22,8 @@ sections:
 - type: jekyll-pages
   label: Pages
   create: none
+- type: heading
+  label: Info
 - type: directory
   path: _data
   label: Information
