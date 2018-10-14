@@ -31,10 +31,9 @@ sections:
   - data-info
   - data-theme
 - type: document
-  path: _data/icons.yml
+  path: README.md
   label: Icons
-  match: "**/*"
-  read_only: true
+  read_only: false
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
