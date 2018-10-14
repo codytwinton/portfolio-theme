@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: "/admin/"
 webhook_url: 
 sections:
-- type: document
-  path: _data/theme.yml
-  label: Theme
-  match: "**/*"
 - type: directory
   path: _work
   label: Work
@@ -25,13 +21,14 @@ sections:
 - type: heading
   label: Information
 - type: document
-  path: _data/socials.yml
-  label: Social Accounts
-  match: "**/*"
-- type: document
   path: _data/info.yml
   label: General
-  match: "**/*"
+- type: document
+  path: _data/socials.yml
+  label: Social Accounts
+- type: document
+  path: _data/theme.yml
+  label: Theme
 - type: directory
   path: _data
   label: Data
