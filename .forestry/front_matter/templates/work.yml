@@ -14,7 +14,7 @@ fields:
     - graphical
   label: Type
   description: Work type
-  default: github
+  default: graphical
 - name: title
   label: Title
   type: text
@@ -62,13 +62,13 @@ fields:
     name: icon
     config:
       source:
-        type: datafiles
-        file: _data-icons-yml
+        type: documents
+        file: _data/theme.yml
         path: icons
       required: true
     label: Icon
     description: Font Awesome icon
-    default: Facebook
+    default: ''
   config:
     labelField: title
 - type: image_gallery
