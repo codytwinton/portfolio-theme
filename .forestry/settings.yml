@@ -4,6 +4,14 @@ auto_deploy: false
 admin_path: "/admin/"
 webhook_url: 
 sections:
+- type: jekyll-pages
+  label: Pages
+  create: none
+  exclude: "{README.md,*.json}"
+- type: jekyll-posts
+  label: Posts
+  create: none
+  hidden: true
 - type: directory
   path: _work
   label: Work
@@ -11,14 +19,6 @@ sections:
   match: "**/*"
   templates:
   - work
-- type: jekyll-posts
-  label: Posts
-  create: none
-  hidden: true
-- type: jekyll-pages
-  label: Pages
-  create: none
-  exclude: "{README.md,*.json}"
 - type: heading
   label: Information
 - type: document
