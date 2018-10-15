@@ -3,6 +3,18 @@ label: Theme
 hide_body: false
 is_partial: false
 fields:
+- type: select
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - Developer
+    - Designer
+  label: Type
+  name: type
+  description: The theme type to use
+  default: Developer
 - type: field_group
   name: colors
   label: Colors
