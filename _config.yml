@@ -50,5 +50,5 @@ titles_from_headings:
   strip_title: false
   collections: false
 description: Example portfolio website
-image: ''
-logo: ''
+image: "/uploads/2018/05/20/example-logo.png"
+logo: "/uploads/2018/05/20/example-logo.png"
