@@ -4,12 +4,6 @@ hide_body: false
 is_partial: false
 fields:
 - type: text
-  name: name
-  label: Name
-  description: Personal name
-  config:
-    required: true
-- type: text
   name: email
   label: Email
   description: Contact email address
@@ -19,9 +13,5 @@ fields:
   name: company_name
   label: Company Name
   description: Company name
-- type: text
-  name: ga_tracking_id
-  label: Google Analytics Tracking ID
-  description: e.g UA-123456789-1
 pages:
 - _data/info.yml

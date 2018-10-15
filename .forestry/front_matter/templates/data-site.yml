@@ -77,6 +77,10 @@ fields:
   name: logo
   label: 'SEO: Logo'
   description: Used for SEO
+- type: text
+  name: ga_tracking_id
+  label: 'SEO: Google Analytics Tracking ID'
+  description: e.g UA-123456789-1
 - name: author
   label: 'SEO: Author'
   type: field_group
