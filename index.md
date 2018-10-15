@@ -13,6 +13,7 @@ sections:
   - _work/swiftcommonmark.md
   - _work/swiftyviper.md
   - _work/portfolio-theme.md
+  subtitle: Subtitle
 - template: partial-columns
   columns:
   - title: About
@@ -20,9 +21,11 @@ sections:
       I've worked with a variety of companies and projects. Recently, I've accepted
       a job at Facebook as an iOS Developer.
     width: ''
+    subtitle: Subtitle
   - title: Contact
     description: '[cody@codywinton.com](mailto:cody@codywinton.com "Contact Me")'
     width: '4'
+    subtitle: Subtitle
   column_count: '2'
   id: about
   title: About
