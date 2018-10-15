@@ -200,3 +200,5 @@ fields:
     default: ''
   hidden: false
   default: ''
+pages:
+- _config.yml
