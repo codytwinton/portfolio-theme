@@ -30,13 +30,9 @@ sections:
   path: _data/theme.yml
   label: Theme
 - type: document
-  path: _data/icons.yml
+  path: _data/fa-icons.yml
   label: Icons
   read_only: true
-- type: document
-  path: _data/fa-icons.yml
-  label: Testing Icon
-  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
