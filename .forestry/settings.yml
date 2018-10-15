@@ -33,6 +33,10 @@ sections:
   path: _data/icons.yml
   label: Icons
   read_only: true
+- type: document
+  path: _data/fa-icons.yml
+  label: Testing Icon
+  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''

@@ -14,4 +14,3 @@ fields:
     description: Font Awesome Icon
 pages:
 - _data/icons.yml
-- _data/fa-icons.yml
