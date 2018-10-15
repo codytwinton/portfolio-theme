@@ -12,5 +12,3 @@ fields:
     label: Icon
     name: fa_icon
     description: Font Awesome Icon
-pages:
-- _data/fa-icons.yml
