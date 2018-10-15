@@ -13,7 +13,11 @@ fields:
 - type: text
   name: title
   label: Title
-  description: The optional title displayed above the collections
+  description: The optional title displayed above
+- type: text
+  label: Subtitle
+  name: subtitle
+  description: The optional subtitle displayed above
 - type: list
   name: works
   label: Work
