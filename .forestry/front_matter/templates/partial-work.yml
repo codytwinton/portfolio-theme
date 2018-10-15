@@ -2,6 +2,7 @@
 label: Work Partial
 hide_body: false
 is_partial: true
+display_field: title
 fields:
 - type: text
   label: Section ID
