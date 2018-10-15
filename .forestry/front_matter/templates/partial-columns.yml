@@ -5,15 +5,15 @@ is_partial: true
 display_field: title
 fields:
 - type: text
-  label: Title
-  name: title
-  description: The title to display in CMS
-  config:
-    required: true
-- type: text
   name: id
   label: Section ID
   description: 'The unique section used to reference in #id-links'
+  config:
+    required: true
+- type: text
+  label: Title
+  name: title
+  description: The title to display in CMS
   config:
     required: true
 - type: field_group_list
@@ -26,6 +26,10 @@ fields:
     description: The title to display
     config:
       required: true
+  - type: text
+    label: Subtitle
+    name: subtitle
+    description: The optional subtitle to display
   - type: textarea
     label: Description
     name: description
