@@ -8,7 +8,8 @@ baseurl:
 # collections_dir: collections
 exclude:
 - README.md
-- "*.json"
+- package.json
+- package-lock.json
 kramdown:
   show_warnings: true
 lang: en
