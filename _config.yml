@@ -1,11 +1,8 @@
 ---
-# Jekyll Settings
 title: Portfolio Website
-timezone: America/Chicago
+timezone: America/Los_Angeles
 url: https://codytwinton.github.io/portfolio-theme
 baseurl: 
-# Enable once Forestry supports custom collections_dir
-# collections_dir: collections
 exclude:
 - README.md
 - package.json
@@ -16,23 +13,15 @@ lang: en
 liquid:
   error_mode: strict
   strict_filters: true
-  # Enable once certain jekyll extensions, like seo, support without errors
-  # strict_variables: true
 permalink: pretty
 safe: true
 sass:
   style: compressed
 strict_front_matter: true
-
-
-# Collections
 collections:
   work:
     title: Work
     output: true
-
-
-# Defaults for Layouts
 defaults:
 - scope:
     path: ''
@@ -44,14 +33,9 @@ defaults:
     type: work
   values:
     layout: page
-
-
-# jekyll-seo-tag settings
 author:
   name: Portfolio Website
   twitter: codytwinton
-# image: "/uploads/logo.png"
-# logo: "/uploads/logo.png"
 social:
   name: Cody Winton
   links:
@@ -61,10 +45,10 @@ social:
   - https://github.com/codytwinton
 twitter:
   username: codytwinton
-
-
-# jekyll-titles-from-headings
 titles_from_headings:
   enabled: false
   strip_title: false
   collections: false
+description: Example portfolio website
+image: ''
+logo: ''
