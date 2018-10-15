@@ -1,18 +1,18 @@
 ---
-label: General Info Data
+label: Company
 hide_body: false
 is_partial: false
 fields:
+- type: text
+  name: company_name
+  label: Company Name
+  description: Company name
 - type: text
   name: email
   label: Email
   description: Contact email address
   config:
     required: true
-- type: text
-  name: company_name
-  label: Company Name
-  description: Company name
 - type: field_group_list
   name: socials
   label: Socials Accounts
