@@ -76,9 +76,9 @@ fields:
   label: Work Portfolio
   description: Image gallery
 pages:
-- _work/first-work.md
-- _work/swiftyviper.md
-- _work/third-work.md
-- _work/portfolio-theme.md
-- _work/swiftcommonmark.md
 - _work/second-work.md
+- _work/swiftcommonmark.md
+- _work/portfolio-theme.md
+- _work/third-work.md
+- _work/swiftyviper.md
+- _work/first-work.md
