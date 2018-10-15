@@ -69,14 +69,6 @@ fields:
   label: Language
   description: Two letter acronym e.g. "en"
   default: en
-- type: file
-  name: image
-  label: 'SEO: Image'
-  description: Used for SEO
-- type: file
-  name: logo
-  label: 'SEO: Logo'
-  description: Used for SEO
 - type: text
   name: ga_tracking_id
   label: 'SEO: Google Analytics Tracking ID'
@@ -133,6 +125,14 @@ fields:
     description: Your username without the `@` symbol
   hidden: false
   default: ''
+  description: Used for SEO
+- type: file
+  name: image
+  label: 'SEO: Image'
+  description: Used for SEO
+- type: file
+  name: logo
+  label: 'SEO: Logo'
   description: Used for SEO
 pages:
 - _config.yml
