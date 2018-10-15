@@ -5,7 +5,7 @@ is_partial: false
 fields:
 - type: text
   name: company_name
-  label: Company Name
+  label: Name
   description: Company name
 - type: text
   name: email
