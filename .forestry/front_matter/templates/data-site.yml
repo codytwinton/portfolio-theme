@@ -69,7 +69,7 @@ fields:
   label: Language
   description: Two letter acronym e.g. "en"
   default: en
-  hidden: true
+  hidden: false
 - type: text
   name: ga_tracking_id
   label: 'SEO: Google Analytics Tracking ID'
