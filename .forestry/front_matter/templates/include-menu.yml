@@ -13,3 +13,4 @@ fields:
   label: Nav Menu
   name: nav_menu
   description: The menu to display in the nav bar
+  default: home
