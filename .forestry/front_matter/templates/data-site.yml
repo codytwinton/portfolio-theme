@@ -69,6 +69,14 @@ fields:
   label: Language
   description: Two letter acronym e.g. "en"
   default: en
+- type: file
+  name: image
+  label: 'SEO: Image'
+  description: Used for SEO
+- type: file
+  name: logo
+  label: 'SEO: Logo'
+  description: Used for SEO
 - name: author
   label: 'SEO: Author'
   type: field_group
