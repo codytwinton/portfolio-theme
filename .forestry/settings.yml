@@ -31,7 +31,7 @@ sections:
   label: Theme
 - type: document
   path: _data/fa-icons.yml
-  label: Icons
+  label: FA Icons
   read_only: true
 upload_dir: uploads
 public_path: "/uploads"
