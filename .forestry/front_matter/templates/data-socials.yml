@@ -25,13 +25,13 @@ fields:
     config:
       source:
         type: documents
-        file: _data/fa-icons.yml
-        path: ''
+        file: _data/theme.yml
+        path: icons
         section: ''
       required: true
     label: Icon
     description: Font awesome icon
-    default: name
+    default: Angel List
   config:
     labelField: title
 pages:
