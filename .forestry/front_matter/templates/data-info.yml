@@ -13,5 +13,36 @@ fields:
   name: company_name
   label: Company Name
   description: Company name
+- type: field_group_list
+  name: socials
+  label: Socials Accounts
+  description: Facebook, Twitter, etc.
+  fields:
+  - type: text
+    label: Title
+    name: title
+    description: e.g. Facebook
+    config:
+      required: true
+  - type: text
+    label: URL
+    name: url
+    description: e.g. https://facebook.com/username
+    config:
+      required: true
+  - type: select
+    name: icon
+    config:
+      source:
+        type: documents
+        file: _data/theme.yml
+        path: icons
+        section: ''
+      required: true
+    label: Icon
+    description: Font awesome icon
+    default: Facebook
+  config:
+    labelField: title
 pages:
 - _data/info.yml

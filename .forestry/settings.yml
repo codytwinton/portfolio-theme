@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: "/admin/"
 webhook_url: 
 sections:
+- type: heading
+  label: Collections
 - type: jekyll-pages
   label: Pages
   create: none
@@ -24,16 +26,13 @@ sections:
   label: Information
 - type: document
   path: _data/info.yml
-  label: General
-- type: document
-  path: _data/socials.yml
-  label: Social Accounts
-- type: document
-  path: _data/theme.yml
-  label: Theme
+  label: Company
 - type: document
   path: _config.yml
   label: Site
+- type: document
+  path: _data/theme.yml
+  label: Theme
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
