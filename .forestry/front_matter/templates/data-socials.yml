@@ -5,8 +5,8 @@ is_partial: false
 fields:
 - type: field_group_list
   name: socials
-  label: Socials
-  description: Social and online accounts
+  label: Socials Accounts
+  description: Facebook, Twitter, etc.
   fields:
   - type: text
     label: Title
