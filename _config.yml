@@ -1,23 +1,23 @@
 ---
 title: Portfolio Website
 timezone: America/Los_Angeles
+description: Example portfolio website
+image: "/uploads/2018/05/20/example-logo.png"
+logo: "/uploads/2018/05/20/example-logo.png"
+author:
+  name: Portfolio Website
+  twitter: codytwinton
+social:
+  name: Cody Winton
+  links:
+  - https://twitter.com/codytwinton
+  - https://www.facebook.com/codytwinton
+  - https://www.linkedin.com/in/codytwinton
+  - https://github.com/codytwinton
+twitter:
+  username: codytwinton
 url: https://codytwinton.github.io/portfolio-theme
 baseurl: 
-exclude:
-- README.md
-- package.json
-- package-lock.json
-kramdown:
-  show_warnings: true
-lang: en
-liquid:
-  error_mode: strict
-  strict_filters: true
-permalink: pretty
-safe: true
-sass:
-  style: compressed
-strict_front_matter: true
 collections:
   work:
     title: Work
@@ -33,22 +33,22 @@ defaults:
     type: work
   values:
     layout: page
-author:
-  name: Portfolio Website
-  twitter: codytwinton
-social:
-  name: Cody Winton
-  links:
-  - https://twitter.com/codytwinton
-  - https://www.facebook.com/codytwinton
-  - https://www.linkedin.com/in/codytwinton
-  - https://github.com/codytwinton
-twitter:
-  username: codytwinton
+exclude:
+- README.md
+- package.json
+- package-lock.json
+kramdown:
+  show_warnings: true
+lang: en
+liquid:
+  error_mode: strict
+  strict_filters: true
+permalink: pretty
+safe: true
+sass:
+  style: compressed
+strict_front_matter: true
 titles_from_headings:
   enabled: false
   strip_title: false
   collections: false
-description: Example portfolio website
-image: "/uploads/2018/05/20/example-logo.png"
-logo: "/uploads/2018/05/20/example-logo.png"
