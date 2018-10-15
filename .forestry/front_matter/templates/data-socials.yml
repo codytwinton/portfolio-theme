@@ -31,7 +31,7 @@ fields:
       required: true
     label: Icon
     description: Font awesome icon
-    default: Angel List
+    default: Facebook
   config:
     labelField: title
 pages:
