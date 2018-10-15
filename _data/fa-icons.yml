@@ -1,0 +1,47 @@
+---
+Angel List:
+  fa_icon: fab fa-angellist
+Check:
+  fa_icon: fas fa-check
+Code:
+  fa_icon: fas fa-code
+Cogs:
+  fa_icon: fas fa-cogs
+Compass:
+  fa_icon: fas fa-compass
+Facebook:
+  fa_icon: fab fa-facebook-f
+File with Text:
+  fa_icon: fas fa-tasks
+GitHub:
+  fa_icon: fab fa-github
+Globe:
+  fa_icon: fas fa-globe
+Graduation Cap:
+  fa_icon: fas fa-graduation-cap
+Instagram:
+  fa_icon: fab fa-instagram
+LinkedIn:
+  fa_icon: fab fa-linkedin-in
+Medium:
+  fa_icon: fab fa-medium-m
+Play Circle:
+  fa_icon: fas fa-play-circle
+Plug:
+  fa_icon: fas fa-plug
+Refresh:
+  fa_icon: fas fa-sync-alt
+Stack Overflow:
+  fa_icon: fab fa-stack-overflow
+Tags:
+  fa_icon: fas fa-tags
+Terminal:
+  fa_icon: fas fa-terminal
+Twitter:
+  fa_icon: fab fa-twitter
+User:
+  fa_icon: fas fa-user
+Users:
+  fa_icon: fas fa-users
+Vimeo:
+  fa_icon: fab fa-vimeo-v
