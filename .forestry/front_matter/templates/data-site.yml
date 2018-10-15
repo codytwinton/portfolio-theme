@@ -17,8 +17,10 @@ fields:
       type: simple
     options:
     - America/Adak
+    required: true
   label: Timezone
   name: timezone
+  description: Your local timezone
 - name: lang
   label: Lang
   type: text
