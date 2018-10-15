@@ -2,12 +2,13 @@
 title: Portfolio Website
 timezone: America/Los_Angeles
 description: Example portfolio website
-image: "/uploads/2018/05/20/example-logo.png"
-logo: "/uploads/2018/05/20/example-logo.png"
 author:
   name: Portfolio Website
   twitter: codytwinton
 ga_tracking_id: 
+image: "/uploads/2018/05/20/example-logo.png"
+lang: en
+logo: "/uploads/2018/05/20/example-logo.png"
 social:
   name: Cody Winton
   links:
@@ -40,7 +41,6 @@ exclude:
 - package-lock.json
 kramdown:
   show_warnings: true
-lang: en
 liquid:
   error_mode: strict
   strict_filters: true
