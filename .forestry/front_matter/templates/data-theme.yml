@@ -52,5 +52,13 @@ fields:
     default: sans-serif
   config:
     labelField: name
+- type: field_group
+  name: header
+  label: Header
+  description: Logo, etc.
+  fields:
+  - type: file
+    name: logo
+    label: Logo
 pages:
 - _data/theme.yml
