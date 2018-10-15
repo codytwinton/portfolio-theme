@@ -6,7 +6,9 @@ url: https://codytwinton.github.io/portfolio-theme
 baseurl: 
 # Enable once Forestry supports custom collections_dir
 # collections_dir: collections
-exclude: README.md, *.json
+exclude:
+- README.md
+- "*.json:"
 kramdown:
   show_warnings: true
 lang: en
