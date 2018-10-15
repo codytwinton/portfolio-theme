@@ -18,6 +18,7 @@ sections:
 - type: jekyll-pages
   label: Pages
   create: none
+  exclude: "{README.md,*.json}"
 - type: heading
   label: Information
 - type: document
