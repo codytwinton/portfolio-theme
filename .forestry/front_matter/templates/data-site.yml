@@ -11,6 +11,14 @@ fields:
   description: e.g. Portfolio Website
   config:
     required: true
+- type: textarea
+  name: description
+  label: Site Description
+  description: Describe your site
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
 - type: select
   config:
     source:
