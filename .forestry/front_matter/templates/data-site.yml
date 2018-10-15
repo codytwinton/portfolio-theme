@@ -49,29 +49,41 @@ fields:
   label: Timezone
   name: timezone
   description: Your local timezone
-- name: lang
-  label: Lang
-  type: text
-  hidden: false
-  default: ''
+  default: America/Los_Angeles
+- type: select
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - en
+  name: lang
+  label: Language
+  description: Two letter acronym e.g. "en"
+  default: en
 - name: author
-  label: Author
+  label: 'SEO: Author'
   type: field_group
   fields:
   - name: name
-    label: Name
+    label: Author
     type: text
     hidden: false
     default: ''
+    description: e.g. John Smith
+    config:
+      required: false
   - name: twitter
     label: Twitter
     type: text
     hidden: false
     default: ''
+    description: Your username without the `@` symbol
   hidden: false
   default: ''
+  description: Used for SEO
 - name: social
-  label: Social
+  label: 'SEO: Social'
   type: field_group
   fields:
   - name: name
@@ -79,15 +91,18 @@ fields:
     type: text
     hidden: false
     default: ''
+    description: e.g. John Smith
   - name: links
-    label: Links
+    label: Social Links
     type: list
     hidden: false
     default: ''
+    description: e.g. https://twitter.com/username
   hidden: false
   default: ''
+  description: Used for SEO
 - name: twitter
-  label: Twitter
+  label: 'SEO: Twitter'
   type: field_group
   fields:
   - name: username
@@ -95,7 +110,9 @@ fields:
     type: text
     hidden: false
     default: ''
+    description: Your username without the `@` symbol
   hidden: false
   default: ''
+  description: Used for SEO
 pages:
 - _config.yml
