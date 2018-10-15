@@ -7,13 +7,8 @@ sections:
 - type: jekyll-pages
   label: Pages
   create: none
-  exclude: "*.json"
   templates:
   - pages
-- type: jekyll-posts
-  label: Posts
-  create: none
-  hidden: true
 - type: directory
   path: _work
   label: Work
