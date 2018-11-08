@@ -1,6 +1,6 @@
 ---
 title: Home
-display_title: Cody Winton
+display_title: Cody Winton. Developer.
 nav_menu: home
 sections:
 - template: partial-work
@@ -29,6 +29,7 @@ sections:
   column_count: '2'
   id: about
   title: About
+subtitle: Welcome
 
 ---
 I'm a multi-stack dev & creative problem-solver. I like working with cool stuff. Follow me everywhere: @codytwinton
