@@ -15,6 +15,10 @@ fields:
   name: display_title
   label: Display Title
   description: e.g. About Me
+- type: text
+  name: subtitle
+  label: Subtitle
+  description: e.g. My life as a spatula
 - type: include
   name: nav_menu
   label: Nav Menu
