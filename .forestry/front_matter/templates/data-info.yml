@@ -6,7 +6,7 @@ fields:
 - type: text
   name: company_name
   label: Name
-  description: Company name
+  description: If not set, the site title will be used
 - type: text
   name: email
   label: Email
