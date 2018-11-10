@@ -72,5 +72,6 @@ fields:
   - type: file
     name: logo
     label: Logo
+    description: If not set, the header will display the site title
 pages:
 - _data/theme.yml
