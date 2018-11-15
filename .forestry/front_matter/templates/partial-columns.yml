@@ -25,7 +25,7 @@ fields:
     label: Title
     description: The title to display
     config:
-      required: true
+      required: false
   - type: text
     label: Subtitle
     name: subtitle
@@ -38,7 +38,7 @@ fields:
       wysiwyg: true
       schema:
         format: markdown
-      required: true
+      required: false
   - type: number
     label: Width
     name: width
