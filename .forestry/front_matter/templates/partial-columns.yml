@@ -48,5 +48,9 @@ fields:
       step: '1'
       required: false
     description: The optional width to apply in the 12-grid layout
+  - type: file
+    name: image
+    label: Image
+    description: The image to display
   config:
     labelField: title
