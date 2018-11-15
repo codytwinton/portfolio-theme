@@ -6,19 +6,19 @@ layout: default
   {% include other/header.html menu=page.nav_menu %}
 
   {%- case site.data.theme.type -%}
-    {%- when "Designer" -%}
-    <div class="row" style="text-align: left; padding: 96px 0; display: block;">
-      <p>
-        <strong>{{ page.subtitle | upcase }}</strong>
-      </p>
-      <h2 class="display-4">{{ page.display_title }}</h2>
-    </div>
-    {%- when "Developer" -%}
-      <div class="row justify-content-md-center" style="text-align: center; padding: 128px 0; font-size: 2rem;">
-        <div class="col-12 col-md-8">
-          {{- content -}}
-        </div>
+  {%- when "Designer" -%}
+  <div class="row" style="text-align: left; padding: 96px 0; display: block;">
+    <p>
+      <strong>{{ page.subtitle | upcase }}</strong>
+    </p>
+    <h2 class="display-4">{{ page.display_title }}</h2>
+  </div>
+  {%- when "Developer" -%}
+    <div class="row justify-content-md-center" style="text-align: center; padding: 128px 0; font-size: 2rem;">
+      <div class="col-12 col-md-8">
+        {{- content -}}
       </div>
+    </div>
   {%- endcase -%}
 
   {% for section in page.sections %}
