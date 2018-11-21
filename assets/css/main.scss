@@ -9,7 +9,7 @@
 
 {% assign font_families = "" | split: "" %}
 
-{% for font in theme.google_fonts %}
+{% for font in theme.fonts.google_fonts %}
 {% assign family = font.name | split: " " | join: "+" | append: ":" | append: font.weights %}
 {% assign font_families = font_families | push: family %}
 
