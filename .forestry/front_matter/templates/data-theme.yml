@@ -69,6 +69,21 @@ fields:
       default: sans-serif
     config:
       labelField: name
+  - type: field_group
+    name: weight
+    label: Font Weights
+    description: The font weights to use
+    fields:
+    - type: number
+      name: normal
+      label: Normal
+      description: The font weight for normal size
+      config:
+        min: '100'
+        max: '900'
+        step: '100'
+        required: true
+      default: '400'
 - type: field_group
   name: header
   label: Header
