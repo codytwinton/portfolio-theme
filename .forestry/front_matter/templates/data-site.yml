@@ -71,7 +71,7 @@ fields:
   default: en
   hidden: false
 - type: file
-  name: image
+  name: favicon
   label: 'Favicon'
   description: Displayed in the Browser
 - type: text
