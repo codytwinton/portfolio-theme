@@ -47,12 +47,13 @@ fields:
     - type: number
       name: base
       label: Base
-      description: The base font size
+      description: The base `rem` font size
       default: '16.0'
       config:
-        min: '13.0'
+        min: '0.1'
         step: ''
         required: true
+        max: '5.0'
   - type: field_group
     name: weight
     label: Font Weights
