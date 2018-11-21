@@ -10,6 +10,12 @@ fonts:
   - name: Source Code Pro
     weights: '400,600,700'
     type: monospace
+  size:
+    base: 16
+  weight:
+    normal: 400
+    bold: 300
+    light: 700
 icons:
   Angel List:
     fa_icon: fab fa-angellist
