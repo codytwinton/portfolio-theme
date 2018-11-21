@@ -1,4 +1,5 @@
 ---
+type: Designer
 colors:
   brand: "#007496"
   font: "#454545"
@@ -16,6 +17,8 @@ fonts:
     normal: 400
     bold: 300
     light: 700
+header:
+  logo: "/uploads/2018/10/15/logo.svg"
 icons:
   Angel List:
     fa_icon: fab fa-angellist
@@ -63,6 +66,3 @@ icons:
     fa_icon: fas fa-users
   Vimeo:
     fa_icon: fab fa-vimeo-v
-type: Designer
-header:
-  logo: "/uploads/2018/10/15/logo.svg"
