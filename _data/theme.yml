@@ -2,13 +2,14 @@
 colors:
   brand: "#007496"
   font: "#454545"
-google_fonts:
-- name: Source Sans Pro
-  weights: '600,700'
-  type: sans-serif
-- name: Source Code Pro
-  weights: '400,600,700'
-  type: monospace
+fonts:
+  google_fonts:
+  - name: Source Sans Pro
+    weights: '600,700'
+    type: sans-serif
+  - name: Source Code Pro
+    weights: '400,600,700'
+    type: monospace
 icons:
   Angel List:
     fa_icon: fab fa-angellist
