@@ -72,7 +72,7 @@ fields:
   hidden: false
 - type: file
   name: image
-  label: 'Favicon'
+  label: Favicon
   description: Displayed in the Browser
 - type: text
   name: ga_tracking_id
