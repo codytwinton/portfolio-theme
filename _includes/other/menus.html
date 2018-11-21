@@ -32,7 +32,7 @@
 <li class="nav-item" style="margin: 0 8px;">
   {%- case site.data.theme.type -%}
     {%- when "Designer" -%}
-      <a class="nav-link active" style="font-size: 1.2rem; font-weight: 700;" href={{ item.url | escape }}> {{ item.title }}</a>
+      <a class="nav-link active" style="font-size: 1.2rem; font-weight: 700;" href={{ item.url | escape }}> {{ item.title | upcase }}</a>
     {%- when "Developer" -%}
       <a class="nav-link active" href={{ item.url | escape }}> {{ item.title }}</a>
   {%- endcase -%}
