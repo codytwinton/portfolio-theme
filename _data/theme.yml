@@ -12,11 +12,11 @@ fonts:
     weights: '400,600,700'
     type: monospace
   size:
-    base: 1.0
+    base: 1
   weight:
     normal: 400
-    bold: 300
-    light: 700
+    bold: 700
+    light: 300
 header:
   logo: "/uploads/2018/10/15/logo.svg"
 icons:
