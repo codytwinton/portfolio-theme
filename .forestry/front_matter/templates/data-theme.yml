@@ -51,7 +51,7 @@ fields:
       default: '16.0'
       config:
         min: '13.0'
-        step: '0.1'
+        step: ''
         required: true
   - type: field_group
     name: weight
