@@ -25,12 +25,22 @@ layout: default
 
     {% case section.template %}
     {% when "partial-work" %}
-      {% include sections/work.html section=section %}
+      {%- case site.data.theme.type -%}
+      {%- when "Designer" -%}
+      {%- when "Developer" -%}
+        {% include sections/work.html section=section %}
+      {% endcase %}
     {% when "partial-columns" %}
       {% include sections/columns.html section=section %}
     {% endcase %}
 
   {% endfor %}
+
+  <div id={{ include.section.id }} class="row" style="margin-top: 96px; margin-bottom: 96px;">
+    <div class="col-6">
+      {% include utilities/contact-form.html subject="Contact from Website" to_email=site.data.info.email %}
+    </div>
+  </div>
 
   {% include other/footer.html %}
 </div>
