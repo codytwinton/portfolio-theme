@@ -70,6 +70,10 @@ fields:
   description: Two letter acronym e.g. "en"
   default: en
   hidden: false
+- type: file
+  name: image
+  label: 'Favicon'
+  description: Displayed in the Browser
 - type: text
   name: ga_tracking_id
   label: 'SEO: Google Analytics Tracking ID'

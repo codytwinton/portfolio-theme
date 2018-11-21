@@ -5,6 +5,7 @@ description: Example portfolio website
 author:
   name: Portfolio Website
   twitter: codytwinton
+favicon: "assets/images/favicon.png"
 ga_tracking_id: 
 image: "/uploads/2018/05/20/example-logo.png"
 lang: en
