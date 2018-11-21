@@ -84,6 +84,26 @@ fields:
         step: '100'
         required: true
       default: '400'
+    - type: number
+      name: bold
+      label: Bold
+      description: The font weight for bold size
+      config:
+        min: '100'
+        max: '900'
+        step: '100'
+        required: true
+      default: '700'
+    - type: number
+      name: light
+      label: Light
+      description: The font weight for light size
+      config:
+        min: '100'
+        max: '900'
+        step: '100'
+        required: true
+      default: '300'
 - type: field_group
   name: header
   label: Header
