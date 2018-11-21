@@ -76,6 +76,11 @@ $navbar-light-active-color: {{ theme.colors.font }};
 $link-hover-decoration: none;
 
 
+// Enable Rounded
+
+$enable-rounded: false;
+
+
 // Grid
 
 $grid-gutter-width: 32px;
