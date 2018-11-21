@@ -48,7 +48,7 @@ fields:
       name: base
       label: Base
       description: The base `rem` font size
-      default: '16.0'
+      default: '1.0'
       config:
         min: '0.1'
         step: ''

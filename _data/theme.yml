@@ -12,7 +12,7 @@ fonts:
     weights: '400,600,700'
     type: monospace
   size:
-    base: 16
+    base: 1.0
   weight:
     normal: 400
     bold: 300

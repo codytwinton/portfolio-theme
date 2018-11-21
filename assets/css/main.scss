@@ -38,7 +38,9 @@ $font-family-base: $font-family-sans-serif;
 
 // Font Weights
 
-$font-weight-light: 300;
+$font-weight-normal: {{ theme.fonts.weight.normal | default: 400 }};
+$font-weight-bold: {{ theme.fonts.weight.bold | default: 700 }};
+$font-weight-light: {{ theme.fonts.weight.light | default: 300 }};
 
 $display1-weight: $font-weight-light;
 $display2-weight: $font-weight-light;
@@ -47,6 +49,8 @@ $display4-weight: $font-weight-light;
 
 
 // Font Sizes
+
+$font-size-base: {{ theme.fonts.size.base | append: "rem" }};
 
 $h1-font-size: 1.4rem;
 $h2-font-size: 1.3rem;
