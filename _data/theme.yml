@@ -1,16 +1,13 @@
 ---
 type: Designer
 colors:
-  brand: "#007496"
-  font: "#454545"
+  brand: "#000000"
+  font: "#000000"
 fonts:
   google_fonts:
-  - name: Source Sans Pro
-    weights: '600,700'
+  - name: Roboto
+    weights: 300,300i,400,400i,700,700i
     type: sans-serif
-  - name: Source Code Pro
-    weights: '400,600,700'
-    type: monospace
   size:
     base: 1
   weight:
