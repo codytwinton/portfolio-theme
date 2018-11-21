@@ -39,36 +39,20 @@ fields:
   label: Fonts
   description: Font sizes, families, etc.
   fields:
-  - type: field_group_list
-    label: Google Fonts
-    name: google_fonts
-    description: Fonts to use
+  - type: field_group
+    name: size
+    label: Font Sizes
+    description: The Font Sizes to Use
     fields:
-    - type: text
-      name: name
-      label: Font Name
-      description: e.g. Source Sans Pro
+    - type: number
+      name: base
+      label: Base
+      description: The base font size
+      default: '16.0'
       config:
+        min: '13.0'
+        step: '0.1'
         required: true
-    - type: text
-      name: weights
-      label: Font Weights
-      description: Comma separated number weights; e.g. 400,600,700
-      config:
-        required: true
-    - type: select
-      config:
-        source:
-          type: simple
-        required: true
-        options:
-        - sans-serif
-        - monospace
-      label: Font Type
-      name: type
-      default: sans-serif
-    config:
-      labelField: name
   - type: field_group
     name: weight
     label: Font Weights
@@ -104,6 +88,37 @@ fields:
         step: '100'
         required: true
       default: '300'
+    hidden: false
+  - type: field_group_list
+    label: Google Fonts
+    name: google_fonts
+    description: Fonts to use
+    fields:
+    - type: text
+      name: name
+      label: Font Name
+      description: e.g. Source Sans Pro
+      config:
+        required: true
+    - type: text
+      name: weights
+      label: Font Weights
+      description: Comma separated number weights; e.g. 400,600,700
+      config:
+        required: true
+    - type: select
+      config:
+        source:
+          type: simple
+        required: true
+        options:
+        - sans-serif
+        - monospace
+      label: Font Type
+      name: type
+      default: sans-serif
+    config:
+      labelField: name
 - type: field_group
   name: header
   label: Header
