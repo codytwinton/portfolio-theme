@@ -19,8 +19,20 @@
   {% endif %}
 
   <div class="{{ col_class }}">
+    {%- case site.data.theme.type -%}
+    {%- when "Designer" -%}
+    <p>
+      <strong>{{ item.subtitle | upcase }}</strong>
+    </p>
+    <h2 class="display-4">{{ item.title }}</h2>
+    {%- when "Developer" -%}
     <h2>{{item.title}}</h2>
+    {%- endcase -%}
+
     {{ item.description | markdownify }}
+    {%- if item.image -%}
+    <img class="img" src="{{ item.image }}" alt="{{ item.title | default: site.subtitle }}" style="max-width:100%;">
+    {%- endif -%}
   </div>
   {% endfor %}
 </div>

@@ -1,6 +1,14 @@
 <header>
   <nav class="navbar navbar-expand navbar-light">
-    <a class="navbar-brand" href="/">{{ site.data.info.company_name | default: site.title }}</a>
+
+    <a class="navbar-brand" href="/">
+      {%- if site.data.theme.header.logo -%}
+      <img class="img" src="{{ site.data.theme.header.logo }}" alt="{{ site.data.info.company_name | default: site.title }}" width="80">
+      {%- else -%}
+      {{ site.data.info.company_name | default: site.title }}
+      {%- endif -%}
+    </a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
