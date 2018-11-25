@@ -8,7 +8,13 @@ sections:
   collection: work
   title: Work
   id: work
-  works: []
+  works:
+  - _work/west-coast-organics.md
+  - _work/mary-and-wilma.md
+  - _work/puttin-on-the-ritz.md
+  - _work/meals-oncol.md
+  - _work/drive-by-tacos.md
+  - _work/amber-joi.md
 - template: partial-columns
   column_count: 2
   id: about
