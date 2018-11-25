@@ -7,7 +7,7 @@
   {%- assign work = site.work | where: "path", work_path | first -%}
 
   {% case work.type %}
-  {% when "graphical" %}
+  {% when "Graphical" %}
     {% if work.images.first %}
     <div class="col-12 col-sm-6 col-md-4" style="text-align: center;">
       <a href={{ work.url }} class="overlay-container">
@@ -19,7 +19,7 @@
     </div>
     {% endif %}
 
-  {% when "github" %}
+  {% when GitHub %}
     <div class="col-12 col-sm-6 col-md-4">
       <div style="margin-top: 32px; margin-bottom: 32px;">
         <h3>{{ work.title }}</h3>

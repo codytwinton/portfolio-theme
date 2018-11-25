@@ -10,11 +10,11 @@ fields:
       type: simple
     required: true
     options:
-    - github
-    - graphical
+    - GitHub
+    - Graphical
   label: Type
   description: Work type
-  default: graphical
+  default: Graphical
 - name: title
   label: Title
   type: text

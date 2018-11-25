@@ -1,7 +1,7 @@
 ---
 layout: page
 title: West Coast Organics
-type: graphical
+type: Graphical
 date: 2018-11-24 17:46:23 -0800
 subtitle: Example subtitle
 categories:
