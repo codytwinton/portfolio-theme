@@ -27,11 +27,7 @@ layout: default
 
     {% case section.template %}
     {% when "partial-work" %}
-      {%- case site.data.theme.type -%}
-      {%- when "Designer" -%}
-      {%- when "Developer" -%}
-        {% include sections/work.html section=section %}
-      {% endcase %}
+      {% include sections/work.html section=section %}
     {% when "partial-columns" %}
       {% include sections/columns.html section=section %}
     {% endcase %}

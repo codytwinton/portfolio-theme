@@ -1,0 +1,10 @@
+{% if include.work.images.first %}
+<div class="col-12 col-sm-6 col-md-4" style="text-align: center;">
+  <a href={{ include.work.url }} class="overlay-container">
+    <img class="img" src={{ include.work.images.first }} alt="{{ include.work.title }}" style="max-width: 100%; display: block;">
+    <div class="overlay">
+      <p class="overlay-text">{{ include.work.title }}</p>
+    </div>
+  </a>
+</div>
+{% endif %}
