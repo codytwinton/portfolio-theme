@@ -6,6 +6,8 @@ include:
 -->
 {%- endcomment -%}
 
+<h2 class="display-4">Contact</h2>
+
 <form method="POST" action="https://formspree.io/{{ include.to_email }}">
   <input type="hidden" name="_subject" value="{{ include.subject }}" />
   <input type="hidden" name="_next" value="{{ page.url }}" />
