@@ -16,6 +16,7 @@ sections:
   - _work/tropically-bohemian.md
   - _work/drive-by-tacos.md
   - _work/amber-joi.md
+  type: Graphical
 - template: partial-columns
   column_count: 2
   id: about
