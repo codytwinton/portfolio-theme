@@ -6,7 +6,7 @@
   </h2>
 {%- endcase -%}
 
-<div id={{ include.section.id }} class="row" style="margin-bottom: 96px;">
+<div id="{{ include.section.id }}" class="row" style="margin-bottom: 96px;">
   {% for work_path in include.section.works %}
   {%- assign work = site.work | where: "path", work_path | first -%}
 

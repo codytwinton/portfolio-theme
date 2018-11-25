@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang={{ site.lang | default: "en" }}>
+<html lang="{{ site.lang | default: 'en' }}">
 
 <head>
   <meta charset="utf-8">
@@ -8,16 +8,16 @@
 
   <title>{{ site.title | escape }} | {{ page.title | escape }}</title>
 
-  <link rel="canonical" href={{ page.url | replace:'index.html','' | absolute_url }}>
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href={{ "/feed.xml" | relative_url }}>
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | relative_url }}">
 
   {% assign default_favicon = "assets/images/favicon.png" | relative_url %}
 
-  <link rel="icon" type="image/png" href={{ site.favicon | default: default_favicon }}>
+  <link rel="icon" type="image/png" href="{{ site.favicon | default: default_favicon }}">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
 
-  <link rel="stylesheet" href={{ "/assets/css/main.css" | relative_url }}>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
   {%- if jekyll.environment == 'production' and site.ga_tracking_id -%}
 
@@ -36,9 +36,9 @@
 <body>
   {{ content }}
 
-  <script src={{ "/assets/js/jquery/jquery.min.js" | relative_url }}></script>
-  <script src={{ "/assets/js/popper/popper.min.js" | relative_url }}></script>
-  <script src={{ "/assets/js/bootstrap/bootstrap.min.js" | relative_url }}></script>
+  <script src="{{ '/assets/js/jquery/jquery.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/popper/popper.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/bootstrap/bootstrap.min.js' | relative_url }}"></script>
 </body>
 
 </html>
