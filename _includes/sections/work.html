@@ -1,12 +1,16 @@
-<h2 style="margin-top: 96px;">
-  {{ include.section.title }}
-</h2>
+{%- case site.data.theme.type -%}
+{%- when "Designer" -%}
+{%- when "Developer" -%}
+  <h2 style="margin-top: 96px;">
+    {{ include.section.title }}
+  </h2>
+{%- endcase -%}
 
 <div id={{ include.section.id }} class="row" style="margin-bottom: 96px;">
   {% for work_path in include.section.works %}
   {%- assign work = site.work | where: "path", work_path | first -%}
 
-  {% case work.type %}
+  {% case include.section.type %}
   {% when "Graphical" %}
   {% include sections/work-graphical.html work=work %}
   {% when "GitHub" %}
