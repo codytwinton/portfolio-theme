@@ -76,6 +76,7 @@ fields:
   label: Work Portfolio
   description: Image gallery
 pages:
+- _work/drive-by-tacos.md
 - _work/amber-joi.md
 - _work/swiftcommonmark.md
 - _work/portfolio-theme.md
