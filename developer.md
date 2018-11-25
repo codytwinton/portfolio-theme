@@ -10,6 +10,7 @@ sections:
   - _work/swiftcommonmark.md
   - _work/swiftyviper.md
   - _work/portfolio-theme.md
+  type: GitHub
 - template: partial-columns
   columns:
   - title: About
