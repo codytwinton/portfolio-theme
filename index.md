@@ -7,13 +7,11 @@ sections:
   title: Work
   id: work
   works:
-  - _work/first-work.md
-  - _work/second-work.md
-  - _work/third-work.md
   - _work/swiftcommonmark.md
   - _work/swiftyviper.md
   - _work/portfolio-theme.md
   subtitle: Subtitle
+  type: GitHub
 - template: partial-columns
   columns:
   - title: About
