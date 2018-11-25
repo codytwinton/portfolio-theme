@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Mary and Wilma
-type: Graphical
 date: 2018-11-24 17:37:53 -0800
 subtitle: Example subtitle`
 categories:

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Portfolio Theme
-type: GitHub
 date: 2018-05-20 16:04:56 +0000
 profiles:
 - title: GitHub

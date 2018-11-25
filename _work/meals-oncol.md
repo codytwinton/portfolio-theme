@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Meals OnCol
-type: Graphical
 date: 2018-11-24 17:40:53 -0800
 subtitle: Example subtitle
 categories:

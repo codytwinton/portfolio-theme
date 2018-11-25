@@ -8,7 +8,6 @@ categories:
 - CommonMark
 - Markdown
 images: []
-type: GitHub
 profiles:
 - title: GitHub
   url: https://github.com/codytwinton/SwiftCommonMark

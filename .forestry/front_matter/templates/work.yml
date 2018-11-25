@@ -3,18 +3,6 @@ label: Work
 hide_body: false
 is_partial: false
 fields:
-- type: select
-  name: type
-  config:
-    source:
-      type: simple
-    required: true
-    options:
-    - GitHub
-    - Graphical
-  label: Type
-  description: Work type
-  default: Graphical
 - name: title
   label: Title
   type: text
