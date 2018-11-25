@@ -8,12 +8,9 @@ sections:
   collection: work
   title: Work
   id: work
-  works:
-  - _work/olivia-joy-photography.md
-  - _work/puttin-on-the-ritz.md
-  - _work/tropically-bohemian.md
+  works: []
 - template: partial-columns
-  column_count: '2'
+  column_count: 2
   id: about
   title: About
   columns:
@@ -28,4 +25,3 @@ sections:
   - image: "/uploads/2018/10/15/profile-square.jpg"
 
 ---
-I'm Sarah, a Graphic Designer in California. I'm a creative, telling stories and sharing beauty.
