@@ -1,12 +1,12 @@
-{%- assign menu_exp = "item.menu." | append: include.menu -%}
-{%- assign menu_sort = "menu." | append: include.menu | append: ".weight" -%}
+{%- assign menu_exp = 'item.menu.' | append: include.menu -%}
+{%- assign menu_sort = 'menu.' | append: include.menu | append: '.weight' -%}
 
-{%- assign menu_items = site.pages | where_exp:"item", menu_exp | sort: menu_sort -%}
+{%- assign menu_items = site.pages | where_exp:'item', menu_exp | sort: menu_sort -%}
 {%- assign data_menu_items = site.data.menus[include.menu] -%}
 
 {%- if data_menu_items and data_menu_items.size > 0 -%}
 
-{%- assign data_menu_items = data_menu_items | sort: "weight" -%}
+{%- assign data_menu_items = data_menu_items | sort: 'weight' -%}
 {%- assign page_count = menu_items.size -%}
 
 {%- for item in menu_items -%}
@@ -31,9 +31,9 @@
 
 <li class="nav-item" style="margin: 0 8px;">
   {%- case site.data.theme.type -%}
-    {%- when "Designer" -%}
+    {%- when 'Designer' -%}
       <a class="nav-link active" style="font-size: 1.2rem; font-weight: 700;" href="{{ item.url | escape }}"> {{ item.title | upcase }}</a>
-    {%- when "Developer" -%}
+    {%- when 'Developer' -%}
       <a class="nav-link active" href="{{ item.url | escape }}"> {{ item.title }}</a>
   {%- endcase -%}
 </li>

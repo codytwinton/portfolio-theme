@@ -7,16 +7,16 @@
 
 // Font Families
 
-{% assign font_families = "" | split: "" %}
+{% assign font_families = '' | split: '' %}
 
 {% for font in theme.fonts.google_fonts %}
-{% assign family = font.name | split: " " | join: "+" | append: ":" | append: font.weights %}
+{% assign family = font.name | split: ' ' | join: '+' | append: ':' | append: font.weights %}
 {% assign font_families = font_families | push: family %}
 
 {% case font.type %}
-{% when "monospace" %}
+{% when 'monospace' %}
   {% assign monospace = font.name %}
-{% when "sans-serif" %}
+{% when 'sans-serif' %}
   {% assign sans_serif = font.name %}
 {% endcase %}
 
@@ -50,7 +50,7 @@ $display4-weight: $font-weight-light;
 
 // Font Sizes
 
-$font-size-base: {{ theme.fonts.size.base | append: "rem" }};
+$font-size-base: {{ theme.fonts.size.base | append: 'rem' }};
 
 $h1-font-size: 1.4rem;
 $h2-font-size: 1.3rem;
