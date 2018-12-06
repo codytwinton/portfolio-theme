@@ -1,9 +1,9 @@
 ---
-name: 'Test 2'
-about: 'Test 2'
-title: 'Feature Request'
-labels: feature
+name: 'Feature Name'
+about: 'Feature About'
+title: 'Feature Title'
+labels: bug
 assignees: codytwinton
 ---
 
-Testing this feature request right here and now.
+Testing this feature request description here and now.
