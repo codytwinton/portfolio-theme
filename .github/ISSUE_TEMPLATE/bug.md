@@ -1,4 +1,6 @@
 ---
+name: 'Test'
+about: 'Test'
 title: 'Bug Report'
 labels: bug
 assignees: codytwinton
