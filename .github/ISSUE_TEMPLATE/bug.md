@@ -1,9 +1,9 @@
 ---
-name: 'Test'
-about: 'Test'
-title: 'Bug Report'
+name: 'Bug Name'
+about: 'Bug About'
+title: 'Bug Title'
 labels: bug
 assignees: codytwinton
 ---
 
-Testing this bug report right here and now.
+Testing this bug report description here and now.
