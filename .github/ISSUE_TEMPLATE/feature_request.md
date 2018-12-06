@@ -1,7 +1,6 @@
 ---
 name: Feature Request
 about: Tell us something you want to see in this project
-title: 'Feature Request: INSERT_TITLE_HERE'
 labels: enhancement
 assignees: codytwinton
 ---
