@@ -1,8 +1,8 @@
 ---
-name: Feature Request
-about: Tell us something you want to see in this project
-title: 'Feature Request: INSERT_HERE'
-labels: feature
+name: Bug Report
+about: Report an issue that you're running into
+title: 'Bug Report: INSERT_HERE'
+labels: bug
 assignees: codytwinton
 ---
 
