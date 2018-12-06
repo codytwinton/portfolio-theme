@@ -2,7 +2,7 @@
 name: Feature Request
 about: Tell us something you want to see in this project
 title: 'Feature Request: INSERT_HERE'
-labels: feature
+labels: enhancement
 assignees: codytwinton
 ---
 
