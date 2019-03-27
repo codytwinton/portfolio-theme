@@ -7,7 +7,8 @@
     "copyJQuery": "cpx \"node_modules/jquery/dist/jquery.min.js\" assets/js/jquery",
     "copyPopper": "cpx \"node_modules/popper.js/dist/umd/popper.min.js\" assets/js/popper && cpx \"node_modules/popper.js/dist/umd/popper.min.js.map\" assets/js/popper",
     "copyAll": "npm run copyBootstrap && npm run copyJQuery && npm run copyPopper",
-    "test": "bundle exec jekyll build"
+    "test": "bundle exec jekyll build",
+    "debug": "bundle exec jekyll serve"
   },
   "repository": {
     "type": "git",
