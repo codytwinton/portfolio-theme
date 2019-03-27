@@ -1,6 +1,7 @@
 ---
 label: Company
-hide_body: false
+hide_body: true
+display_field: company_name
 fields:
 - type: text
   name: company_name
