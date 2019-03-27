@@ -3,18 +3,6 @@ label: Work
 hide_body: false
 is_partial: false
 fields:
-- type: select
-  name: type
-  config:
-    source:
-      type: simple
-    required: true
-    options:
-    - github
-    - graphical
-  label: Type
-  description: Work type
-  default: graphical
 - name: title
   label: Title
   type: text
@@ -76,9 +64,13 @@ fields:
   label: Work Portfolio
   description: Image gallery
 pages:
-- _work/second-work.md
 - _work/swiftcommonmark.md
-- _work/portfolio-theme.md
-- _work/third-work.md
 - _work/swiftyviper.md
-- _work/first-work.md
+- _work/mary-and-wilma.md
+- _work/tropically-bohemian.md
+- _work/portfolio-theme.md
+- _work/meals-oncol.md
+- _work/puttin-on-the-ritz.md
+- _work/west-coast-organics.md
+- _work/drive-by-tacos.md
+- _work/amber-joi.md

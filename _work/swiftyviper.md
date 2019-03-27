@@ -1,7 +1,6 @@
 ---
 layout: page
 title: SwiftyVIPER
-type: github
 date: 2015-05-08 15:57:17 +0000
 subtitle: Swift Interaction with VIPER Architecture
 profiles:

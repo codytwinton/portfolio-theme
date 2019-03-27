@@ -4,6 +4,18 @@ hide_body: false
 is_partial: true
 display_field: title
 fields:
+- type: select
+  name: type
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - GitHub
+    - Graphical
+  label: Type
+  description: Work type
+  default: Graphical
 - type: text
   label: Section ID
   name: id

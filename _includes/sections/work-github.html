@@ -1,0 +1,25 @@
+<div class="col-12 col-sm-6 col-md-4">
+  <div style="margin-top: 32px; margin-bottom: 32px;">
+    <h3>{{ include.work.title }}</h3>
+    <p><strong>{{ include.work.subtitle }}</strong></p>
+
+    {{ include.work.content }}
+
+    <p>
+      {% for category in include.work.categories %}
+      <span class="badge badge-secondary">{{ category }}</span>
+      {% endfor %}
+    </p>
+
+    {% assign profile = include.work.profiles.first %}
+
+    {% if profile %}
+      <p>
+        View this project on:
+        <a href="{{ profile.url }}" title="{{ profile.title }}" target="_blank">
+          <i class="{{ site.data.theme.icons[profile.icon].fa_icon }} fa-lg"></i>
+        </a>
+      </p>
+    {% endif %}
+  </div>
+</div>
