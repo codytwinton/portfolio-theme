@@ -1,6 +1,7 @@
 ---
 label: Theme
 hide_body: false
+display_field: type
 fields:
 - type: select
   config:
