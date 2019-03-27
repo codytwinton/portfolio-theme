@@ -1,7 +1,6 @@
 ---
 label: Site
 hide_body: false
-display_field: title
 fields:
 - name: title
   label: Title
@@ -22,7 +21,7 @@ fields:
 - type: text
   name: copyright
   label: Copyright
-  description: e.g. Copyright © 2018 Cody Winton
+  description: e.g. Copyright © 2019 Cody Winton
   config:
     required: true
 - type: select
