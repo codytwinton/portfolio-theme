@@ -1,7 +1,7 @@
 ---
 label: Work
 hide_body: false
-display_field: subtitle
+display_field: title
 fields:
 - name: title
   label: Title
