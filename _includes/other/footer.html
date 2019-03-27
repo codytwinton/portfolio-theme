@@ -2,11 +2,9 @@
   <div class="row footer-row">
     <div class="col-12 col-md-6">
       <p>
-        <!-- prettier-ignore -->
         {%- if site.copyright -%}
         {{ site.copyright }}
         {%- else -%}
-        <!-- prettier-ignore -->
         Copyright {{ '©' }} {{ site.time | date: '%Y' }}
         {{ site.data.info.company_name | default: site.title }}
         {%- endif -%}
