@@ -1,7 +1,6 @@
 ---
 label: Menu
 hide_body: true
-is_partial: true
 display_field: nav_menu
 fields:
 - type: select

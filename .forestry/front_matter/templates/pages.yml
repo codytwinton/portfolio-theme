@@ -1,7 +1,6 @@
 ---
 label: Pages
 hide_body: false
-is_partial: false
 fields:
 - name: title
   label: Title
@@ -32,5 +31,5 @@ fields:
   - partial-columns
   description: The sections to include in the page
 pages:
-- index.md
 - 404.md
+- index.md
