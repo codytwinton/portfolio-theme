@@ -1,2 +1,9 @@
+_data/
 _includes/
 _layouts/
+_site/
+_work/
+.git/
+.forestry/
+admin/
+scripts/

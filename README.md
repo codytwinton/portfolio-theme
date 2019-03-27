@@ -20,9 +20,9 @@ remote_theme: codytwinton/portfolio-theme@v0.6.0
 
 ## Websites with this Theme
 
-* [codywinton.com](https://codywinton.com)
-* [sarahwintondesign.com](http://sarahwintondesign.com)
+- [codywinton.com](https://codywinton.com)
+- [sarahwintondesign.com](http://sarahwintondesign.com)
 
 ## Inspiration
 
-* [Amari](https://demos.onepagelove.com/html/amari/)
+- [Amari](https://demos.onepagelove.com/html/amari/)
