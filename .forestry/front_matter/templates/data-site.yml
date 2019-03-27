@@ -1,9 +1,10 @@
 ---
 label: Site
 hide_body: false
+display_field: title
 fields:
 - name: title
-  label: Site Title
+  label: Title
   type: text
   hidden: false
   default: ''
@@ -12,12 +13,18 @@ fields:
     required: true
 - type: textarea
   name: description
-  label: Site Description
+  label: Description
   description: Describe your site
   config:
     wysiwyg: true
     schema:
       format: markdown
+- type: text
+  name: copyright
+  label: Copyright
+  description: e.g. Copyright © 2018 Cody Winton
+  config:
+    required: true
 - type: select
   config:
     source:
