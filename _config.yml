@@ -7,39 +7,39 @@ author:
   twitter: codytwinton
 favicon: assets/images/favicon.png
 ga_tracking_id: ''
-image: "/uploads/2018/05/20/example-logo.png"
+image: '/uploads/2018/05/20/example-logo.png'
 lang: en
-logo: "/uploads/2018/05/20/example-logo.png"
+logo: '/uploads/2018/05/20/example-logo.png'
 social:
   name: Cody Winton
   links:
-  - https://twitter.com/codytwinton
-  - https://www.facebook.com/codytwinton
-  - https://www.linkedin.com/in/codytwinton
-  - https://github.com/codytwinton
+    - https://twitter.com/codytwinton
+    - https://www.facebook.com/codytwinton
+    - https://www.linkedin.com/in/codytwinton
+    - https://github.com/codytwinton
 twitter:
   username: codytwinton
 url: https://codytwinton.github.io/portfolio-theme
-baseurl: 
+baseurl:
 collections:
   work:
     title: Work
     output: true
 defaults:
-- scope:
-    path: ''
-    type: pages
-  values:
-    layout: page
-- scope:
-    path: ''
-    type: work
-  values:
-    layout: page
+  - scope:
+      path: ''
+      type: pages
+    values:
+      layout: page
+  - scope:
+      path: ''
+      type: work
+    values:
+      layout: page
 exclude:
-- README.md
-- package.json
-- package-lock.json
+  - README.md
+  - package.json
+  - package-lock.json
 kramdown:
   show_warnings: true
 liquid:
