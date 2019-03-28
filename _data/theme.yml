@@ -72,3 +72,6 @@ layouts:
 work_permalinks:
   "/work/:name": true
   "/portfolio/:name": true
+types_array:
+- Developer
+- Designer
