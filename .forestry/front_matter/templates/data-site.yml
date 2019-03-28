@@ -79,6 +79,28 @@ fields:
   name: favicon
   label: Favicon
   description: Displayed in the Browser
+- type: field_group
+  name: collections
+  label: Collections
+  description: 'Jekyll: Collections'
+  fields:
+  - type: field_group
+    label: Work
+    name: work
+    description: The work collection
+    fields:
+    - type: select
+      config:
+        source:
+          type: documents
+          section: other
+          file: _data/theme.yml
+          path: work_permalinks
+        required: true
+      label: Permalink
+      name: permalink
+      description: Permalink style e.g. /work/:name
+      default: "/work/:name"
 - type: text
   name: ga_tracking_id
   label: 'SEO: Google Analytics Tracking ID'
