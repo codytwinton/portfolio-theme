@@ -19,18 +19,6 @@ fields:
   name: subtitle
   label: Subtitle
   description: e.g. My life as a spatula
-- type: include
-  name: nav_menu
-  label: Nav Menu
-  template: include-menu
-  description: The menu to display in the nav bar
-- type: blocks
-  name: sections
-  label: Sections
-  template_types:
-  - partial-work
-  - partial-columns
-  description: The sections to include in the page
 - type: select
   config:
     source:
@@ -43,6 +31,18 @@ fields:
   name: layout
   description: The layout for the page
   default: page
+- type: include
+  name: nav_menu
+  label: Nav Menu
+  template: include-menu
+  description: The menu to display in the nav bar
+- type: blocks
+  name: sections
+  label: Sections
+  template_types:
+  - partial-work
+  - partial-columns
+  description: The sections to include in the page
 pages:
 - 404.md
 - index.md
