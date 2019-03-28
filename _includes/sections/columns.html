@@ -31,7 +31,7 @@
 
     {{ item.description | markdownify }}
     {%- if item.image -%}
-    <img class="img" src="{{ item.image }}" alt="{{ item.title | default: site.subtitle }}" style="max-width:100%;">
+    <img class="img" src="{{ item.image }}" alt="{{ item.title | default: item.subtitle | default: "image" }}" style="max-width:100%;">
     {%- endif -%}
   </div>
   {% endfor %}
