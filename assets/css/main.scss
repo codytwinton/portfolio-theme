@@ -59,6 +59,11 @@ $h4-font-size: 1.1rem;
 $h5-font-size: 1.0rem;
 $h6-font-size: 0.9rem;
 
+$display1-size: 3.5rem;
+$display2-size: 3.0rem;
+$display3-size: 2.5rem;
+$display4-size: 2.0rem;
+
 
 // Line Heights
 
@@ -84,6 +89,13 @@ $enable-rounded: false;
 // Grid
 
 $grid-gutter-width: 32px;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 1024px,
+  xl: 1280px
+);
 
 
 // Theme
