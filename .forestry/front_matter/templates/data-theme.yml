@@ -3,134 +3,131 @@ label: Theme
 hide_body: true
 display_field: type
 fields:
-- type: select
-  config:
-    source:
-      type: documents
-      section: other
-      file: _data/theme.yml
-      path: types
-    required: true
-    options:
-    - Developer
-    - Designer
-  label: Type
-  name: type
-  description: The theme type to use
-  default: Developer
-- type: field_group
-  name: colors
-  label: Colors
-  description: Brand colors, font colors, etc.
-  fields:
-  - type: color
+  - type: select
     config:
-      color_format: Hex
+      source:
+        type: documents
+        section: other
+        file: _data/theme.yml
+        path: types
       required: true
-    label: Brand
-    name: brand
-    description: Main brand color
-  - type: color
-    config:
-      color_format: Hex
-      required: true
-    label: Font
-    name: font
-    description: Text color
-- type: field_group
-  name: fonts
-  label: Fonts
-  description: Font sizes, families, etc.
-  fields:
+    label: Type
+    name: type
+    description: The theme type to use
+    default: Developer
   - type: field_group
-    name: size
-    label: Font Sizes
-    description: The Font Sizes to Use
+    name: colors
+    label: Colors
+    description: Brand colors, font colors, etc.
     fields:
-    - type: number
-      name: base
-      label: Base
-      description: The base `rem` font size
-      default: '1.0'
-      config:
-        min: '0.1'
-        step: ''
-        required: true
-        max: '5.0'
+      - type: color
+        config:
+          color_format: Hex
+          required: true
+        label: Brand
+        name: brand
+        description: Main brand color
+      - type: color
+        config:
+          color_format: Hex
+          required: true
+        label: Font
+        name: font
+        description: Text color
   - type: field_group
-    name: weight
-    label: Font Weights
-    description: The font weights to use
+    name: fonts
+    label: Fonts
+    description: Font sizes, families, etc.
     fields:
-    - type: number
-      name: normal
-      label: Normal
-      description: The font weight for normal size
-      config:
-        min: '100'
-        max: '900'
-        step: '100'
-        required: true
-      default: '400'
-    - type: number
-      name: bold
-      label: Bold
-      description: The font weight for bold size
-      config:
-        min: '100'
-        max: '900'
-        step: '100'
-        required: true
-      default: '700'
-    - type: number
-      name: light
-      label: Light
-      description: The font weight for light size
-      config:
-        min: '100'
-        max: '900'
-        step: '100'
-        required: true
-      default: '300'
-    hidden: false
-  - type: field_group_list
-    label: Google Fonts
-    name: google_fonts
-    description: Fonts to use
+      - type: field_group
+        name: size
+        label: Font Sizes
+        description: The Font Sizes to Use
+        fields:
+          - type: number
+            name: base
+            label: Base
+            description: The base `rem` font size
+            default: "1.0"
+            config:
+              min: "0.1"
+              step: ""
+              required: true
+              max: "5.0"
+      - type: field_group
+        name: weight
+        label: Font Weights
+        description: The font weights to use
+        fields:
+          - type: number
+            name: normal
+            label: Normal
+            description: The font weight for normal size
+            config:
+              min: "100"
+              max: "900"
+              step: "100"
+              required: true
+            default: "400"
+          - type: number
+            name: bold
+            label: Bold
+            description: The font weight for bold size
+            config:
+              min: "100"
+              max: "900"
+              step: "100"
+              required: true
+            default: "700"
+          - type: number
+            name: light
+            label: Light
+            description: The font weight for light size
+            config:
+              min: "100"
+              max: "900"
+              step: "100"
+              required: true
+            default: "300"
+        hidden: false
+      - type: field_group_list
+        label: Google Fonts
+        name: google_fonts
+        description: Fonts to use
+        fields:
+          - type: text
+            name: name
+            label: Font Name
+            description: e.g. Source Sans Pro
+            config:
+              required: true
+          - type: text
+            name: weights
+            label: Font Weights
+            description: Comma separated number weights; e.g. 400,600,700
+            config:
+              required: true
+          - type: select
+            config:
+              source:
+                type: documents
+                section: other
+                file: _data/theme.yml
+                path: font_types
+              required: true
+            label: Font Type
+            name: type
+            default: sans-serif
+        config:
+          labelField: name
+  - type: field_group
+    name: header
+    label: Header
+    description: Logo, etc.
     fields:
-    - type: text
-      name: name
-      label: Font Name
-      description: e.g. Source Sans Pro
-      config:
-        required: true
-    - type: text
-      name: weights
-      label: Font Weights
-      description: Comma separated number weights; e.g. 400,600,700
-      config:
-        required: true
-    - type: select
-      config:
-        source:
-          type: simple
-        required: true
-        options:
-        - sans-serif
-        - monospace
-      label: Font Type
-      name: type
-      default: sans-serif
-    config:
-      labelField: name
-- type: field_group
-  name: header
-  label: Header
-  description: Logo, etc.
-  fields:
-  - type: file
-    name: logo
-    label: Logo
-    description: If not set, the header will display the company title
+      - type: file
+        name: logo
+        label: Logo
+        description: If not set, the header will display the company title
 pages:
-- _data/theme.yml
+  - _data/theme.yml
