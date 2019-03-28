@@ -25,15 +25,11 @@ collections:
   work:
     title: Work
     output: true
+    permalink: /work/:name
 defaults:
   - scope:
       path: ''
       type: pages
-    values:
-      layout: page
-  - scope:
-      path: ''
-      type: work
     values:
       layout: page
 exclude:

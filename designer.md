@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Designer
 display_title: Sarah Winton. Graphic Designer.
 subtitle: Welcome

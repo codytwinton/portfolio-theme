@@ -66,3 +66,6 @@ icons:
 layouts:
   page: true
   work: true
+work_permalinks:
+  /work/:name: true
+  /portfolio/:name: true

@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Home
 display_title: Cody Winton. Developer.
 nav_menu: home
