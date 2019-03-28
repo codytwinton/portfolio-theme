@@ -22,6 +22,4 @@ env:
 sudo: false # route your build to the container-based infrastructure for a faster build
 
 notifications:
-  email:
-    on_success: change
-    on_failure: change
+  email: false
