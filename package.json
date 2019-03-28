@@ -1,6 +1,6 @@
 {
   "name": "portfolio-theme",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Jekyll Theme for Personal Portfolio Website",
   "scripts": {
     "copyBootstrap": "cpx \"node_modules/bootstrap/dist/js/bootstrap.min.js\" assets/js/bootstrap && cpx \"node_modules/bootstrap/dist/js/bootstrap.min.js.map\" assets/js/bootstrap && cpx \"node_modules/bootstrap/scss/**/*.scss\" _sass/bootstrap",
