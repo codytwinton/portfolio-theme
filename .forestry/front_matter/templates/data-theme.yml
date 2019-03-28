@@ -6,7 +6,10 @@ fields:
 - type: select
   config:
     source:
-      type: simple
+      type: documents
+      section: other
+      file: _data/theme.yml
+      path: types
     required: true
     options:
     - Developer
