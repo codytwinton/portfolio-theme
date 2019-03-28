@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: work
 title: SwiftCommonMark
 date: 2018-03-04 06:00:00 +0000
 subtitle: CommonMark parsing built in pure Swift

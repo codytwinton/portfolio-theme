@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="container" style="margin-top: 40px; margin-bottom: 40px;">
+  {% include other/header.html menu=page.nav_menu %}
+
+  {%- case site.data.theme.type -%}
+  {%- when "Designer" -%}
+    <div class="row" style="text-align: left; margin-top: 96px; display: block;">
+      <div class="col-12 col-md-8">
+        <p>
+          <strong>{{ page.subtitle | upcase }}</strong>
+        </p>
+        <h2 class="display-4">{{ page.display_title }}</h2>
+      </div>
+    </div>
+  {%- when "Developer" -%}
+    <div class="row justify-content-md-center" style="text-align: center; margin-top: 128px; font-size: 2rem;">
+      <div class="col-12 col-md-8">
+        {{- content -}}
+      </div>
+    </div>
+  {%- endcase -%}
+
+  {% for section in page.sections %}
+
+    {% case section.template %}
+    {% when "partial-work" %}
+      {% include sections/work.html section=section %}
+    {% when "partial-columns" %}
+      {% include sections/columns.html section=section %}
+    {% endcase %}
+
+  {% endfor %}
+
+  <div class="row" style="margin-top: 96px; margin-bottom: 96px;">
+    <div class="col-6">
+      {% include utilities/contact-form.html subject="Contact from Website" to_email=site.data.info.email %}
+    </div>
+  </div>
+
+  {% include other/footer.html %}
+</div>

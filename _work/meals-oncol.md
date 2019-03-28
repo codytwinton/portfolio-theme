@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: work
 title: Meals OnCol
 date: 2018-11-24 17:40:53 -0800
 subtitle: Example subtitle

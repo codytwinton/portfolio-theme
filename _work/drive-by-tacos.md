@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: work
 title: Drive-by Tacos
 date: 2018-11-24 17:35:08 -0800
 subtitle: Example subtitle
