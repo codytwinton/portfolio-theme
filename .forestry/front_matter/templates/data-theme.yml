@@ -129,3 +129,5 @@ fields:
     name: logo
     label: Logo
     description: If not set, the header will display the company title
+pages:
+- _data/theme.yml
