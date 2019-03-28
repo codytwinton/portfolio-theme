@@ -17,6 +17,18 @@ fields:
   hidden: false
   default: 
   description: Subtitle for the work
+- type: select
+  name: layout
+  config:
+    source:
+      type: documents
+      section: theme
+      file: _data/theme.yml
+      path: layouts
+    required: true
+  label: Layout
+  description: Layout for the work item
+  default: page
 - name: date
   label: Date
   type: datetime
