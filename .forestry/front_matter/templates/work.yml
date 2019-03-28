@@ -1,7 +1,6 @@
 ---
 label: Work
 hide_body: false
-display_field: title
 fields:
 - name: title
   label: Title
@@ -28,7 +27,7 @@ fields:
     required: true
   label: Layout
   description: Layout for the work item
-  default: page
+  default: work
 - name: date
   label: Date
   type: datetime
