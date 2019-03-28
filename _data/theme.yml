@@ -64,5 +64,5 @@ icons:
   Vimeo:
     fa_icon: fab fa-vimeo-v
 layouts:
-  Page: page
-  Work: work
+  page: true
+  work: true
