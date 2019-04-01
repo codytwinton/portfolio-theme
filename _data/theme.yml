@@ -5,9 +5,9 @@ colors:
   font: "#000000"
 fonts:
   google_fonts:
-    - name: Roboto
-      weights: 300,300i,400,400i,700,700i
-      type: sans-serif
+  - name: Roboto
+    weights: 300,300i,400,400i,700,700i
+    type: sans-serif
   size:
     base: 1
   weight:
@@ -64,14 +64,17 @@ icons:
   Vimeo:
     fa_icon: fab fa-vimeo-v
 types:
-  - Developer
-  - Designer
+- Developer
+- Designer
 layouts:
-  - page
-  - work
+- page
+- work
 work_permalinks:
-  - "/work/:name"
-  - "/portfolio/:name"
+- "/work/:name"
+- "/portfolio/:name"
 font_types:
-  - sans-serif
-  - monospace
+- sans-serif
+- monospace
+work_categories:
+- brand
+- logo
