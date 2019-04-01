@@ -5,8 +5,9 @@ description: Example portfolio website
 author:
   name: Portfolio Website
   twitter: codytwinton
+copyright: Copyright © 2019 Cody Winton
 favicon: assets/images/favicon.png
-ga_tracking_id: ''
+ga_tracking_id: ""
 image: "/uploads/2018/05/20/example-logo.png"
 lang: en
 logo: "/uploads/2018/05/20/example-logo.png"
@@ -28,7 +29,7 @@ collections:
     permalink: "/portfolio/:name"
 defaults:
 - scope:
-    path: ''
+    path: ""
     type: pages
   values:
     layout: page
@@ -50,4 +51,3 @@ titles_from_headings:
   enabled: false
   strip_title: false
   collections: false
-copyright: Copyright © 2019 Cody Winton
