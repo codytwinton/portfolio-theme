@@ -129,5 +129,9 @@ fields:
     name: logo
     label: Logo
     description: If not set, the header will display the company title
+- type: tag_list
+  label: Work Categories
+  name: work_categories
+  description: The available categories for work/portfolio items
 pages:
 - _data/theme.yml
