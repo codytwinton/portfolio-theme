@@ -8,6 +8,6 @@ categories:
 - logo
 profiles: []
 images:
-- "/uploads/2018/11/25/PuttinOnTheRitzMainPage.jpg"
+- "/uploads/PuttinOnTheRitzMainPage.jpg"
 
 ---

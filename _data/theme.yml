@@ -15,7 +15,7 @@ fonts:
     bold: 700
     light: 300
 header:
-  logo: "/uploads/2018/10/15/logo.svg"
+  logo: "/uploads/logo.svg"
 icons:
   Angel List:
     fa_icon: fab fa-angellist
