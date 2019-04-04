@@ -36,6 +36,7 @@ fields:
   description: Work date
   config:
     time_format: " "
+    required: true
 - type: tag_list
   label: Categories
   name: categories
