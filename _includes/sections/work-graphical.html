@@ -1,10 +1,36 @@
 {% if include.work.images.first %}
-<div class="col-12 col-sm-6 col-md-4" style="text-align: center; margin-bottom: 32px;">
+
+{%- assign graphical_class = "col-12 col-xl-4" -%}
+
+{%- if include.position == 3 -%}
+  {%- assign graphical_class = "col-12 col-xl-8" -%}
+{%- endif -%}
+
+{%- if include.position != 5 -%}
+<div class="{{ graphical_class }}" style="text-align: center;">
+{%- endif -%}
+
   <a href="{{ include.work.url }}" class="overlay-container">
-    <img class="img" src="{{ include.work.images.first }}" alt="{{ include.work.title }}" style="max-width: 100%; display: block;">
+
+    {% case include.position %}
+    {% when 4 %}
+    <img class="img" src="{{ include.work.images.first }}" alt="{{ include.work.title }}"
+      style="max-width: 100%; margin: 16px 0px 2px 0px;">
+    {% when 5 %}
+    <img class="img" src="{{ include.work.images.first }}" alt="{{ include.work.title }}"
+      style="max-width: 100%; margin: 18px 0px 0px 0px;">
+    {% else %}
+    <img class="img" src="{{ include.work.images.first }}" alt="{{ include.work.title }}"
+      style="max-width: 100%; margin: 16px 0px;">
+    {% endcase %}
+
     <!-- <div class="overlay">
       <p class="overlay-text">{{ include.work.title }}</p>
     </div> -->
   </a>
+
+{%- if include.position != 4 -%}
 </div>
+{%- endif -%}
+
 {% endif %}

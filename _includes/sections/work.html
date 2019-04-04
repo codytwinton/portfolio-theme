@@ -6,13 +6,16 @@
   </h2>
 {%- endcase -%}
 
-<div id="{{ include.section.id }}" class="row" style="margin-bottom: 96px;">
-  {% for work_path in include.section.works %}
+<div id="{{ include.section.id }}" class="row">
+  {%- assign work_count = include.section.works.size | modulo: 3 -%}
+  {%- assign work_count = include.section.works.size | minus: work_count -%}
+
+  {% for work_path in include.section.works limit:work_count %}
   {%- assign work = site.work | where: 'path', work_path | first -%}
 
   {% case include.section.type %}
   {% when 'Graphical' %}
-  {% include sections/work-graphical.html work=work %}
+  {% include sections/work-graphical.html work=work position=forloop.index0 %}
   {% when 'GitHub' %}
   {% include sections/work-github.html work=work %}
   {% endcase %}
